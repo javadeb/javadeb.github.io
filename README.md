@@ -69,7 +69,7 @@ Currently, I work as an RF Designer at MEAM, where I design high-efficiency micr
 
 ## 📫 Contact
 
-📧 Email: your.email@example.com  
+📧 Email: javadeb68@gmail.com  
 
 ---
 
