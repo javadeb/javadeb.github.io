@@ -26,7 +26,7 @@ My research focuses on wireless propagation, channel modeling, and the applicati
 
 I am skilled in EM simulation and RF system design using tools such as HFSS, CST, ADS, and MATLAB/Simulink. My work includes antenna design, phased array systems, and modeling complex RF architectures to optimize performance and efficiency.
 
-Currently, I work as an RF Designer at MEAM, where I design high-efficiency microwave sources based on klystron and magnetron technologies. Using COMSOL and HFSS, I develop and simulate high-power electromagnetic sources in L-band and C-band frequencies, contributing to improved performance, reliability, and efficiency.
+Currently, I work as an RF Designer, where I design high-efficiency microwave sources based on magnetron technologies. Using COMSOL and HFSS, I develop and simulate high-power electromagnetic sources in L-band and C-band frequencies, contributing to improved performance, reliability, and efficiency.
 
 ---
 
