@@ -63,6 +63,26 @@
             border-radius: 50%;
             margin-bottom: 15px;
         }
+
+        /* 🔥 Buttons style */
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #0077cc;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #005fa3;
+        }
     </style>
 </head>
 
@@ -75,6 +95,13 @@
     <img src="photo.jpeg" width="180">
 
     <p class="subtitle">RF & Microwave Engineer | PhD | AI for Wireless Systems</p>
+
+    <!-- 🔥 Buttons added here -->
+    <div class="buttons">
+        <a href="CV.pdf" class="btn" target="_blank">📄 Download CV</a>
+        <a href="#research" class="btn">🔬 Research</a>
+        <a href="#contact" class="btn">📬 Contact</a>
+    </div>
 
     <h2>About Me</h2>
 
@@ -94,7 +121,8 @@
         Currently, I work as an RF Designer, where I design high-efficiency microwave sources based on magnetron technologies. Using COMSOL and HFSS, I develop and simulate high-power electromagnetic sources in L-band and C-band frequencies, contributing to improved performance, reliability, and efficiency.
     </p>
 
-    <h2>Research Interests</h2>
+    <!-- 🔥 ID added for navigation -->
+    <h2 id="research">Research Interests</h2>
     <ul>
         <li>Microwave Imaging</li>
         <li>Electromagnetic Modeling</li>
@@ -107,7 +135,8 @@
         (You can list your research projects here later)
     </p>
 
-    <h2>Contact</h2>
+    <!-- 🔥 ID added for navigation -->
+    <h2 id="contact">Contact</h2>
     <ul style="list-style: none; padding: 0; line-height: 1.8;">
         <li>📧 javadeb68@example.com</li>
         <li>🐙 <a href="https://github.com/javadeb" target="_blank">GitHub</a></li>
