@@ -7,80 +7,118 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0;
             background-color: #f5f5f5;
             color: #333;
         }
 
-        .container {
-            max-width: 850px;
-            margin: auto;
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar .name {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            max-width: 1100px;
+            margin: 30px auto;
+            display: flex;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            height: fit-content;
+        }
+
+        .sidebar img {
+            width: 180px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .sidebar p {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .sidebar a {
+            display: block;
+            margin: 8px 0;
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            flex: 1;
             background: white;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
         }
 
-        h1 {
+        h1, h2 {
             color: #2c3e50;
-            margin-bottom: 10px;
         }
 
         h2 {
             border-bottom: 2px solid #eee;
             padding-bottom: 5px;
-            margin-top: 30px;
-            text-align: left;
+            margin-top: 35px;
         }
 
         p {
             text-align: justify;
             line-height: 1.7;
-            margin-bottom: 15px;
         }
 
         ul {
-            text-align: left;
+            line-height: 1.7;
         }
 
-        a {
-            color: #0077cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .subtitle {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        img {
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
-        /* 🔥 Buttons style */
-        .buttons {
-            margin: 20px 0;
-        }
-
-        .btn {
+        .cv-button {
             display: inline-block;
-            margin: 5px;
             padding: 10px 15px;
             background-color: #0077cc;
             color: white;
             border-radius: 5px;
             text-decoration: none;
-            font-size: 14px;
         }
 
-        .btn:hover {
+        .cv-button:hover {
             background-color: #005fa3;
         }
     </style>
@@ -88,63 +126,85 @@
 
 <body>
 
-<div class="container">
-
-    <h1>Javad Ebrahimizadeh</h1>
-
-    <img src="photo.jpeg" width="180">
-
-    <p class="subtitle">RF & Microwave Engineer | PhD | AI for Wireless Systems</p>
-
-    <!-- 🔥 Buttons added here -->
-    <div class="buttons">
-        <a href="CV.pdf" class="btn" target="_blank">📄 Download CV</a>
-        <a href="#research" class="btn">🔬 Research</a>
-        <a href="#contact" class="btn">📬 Contact</a>
+    <div class="navbar">
+        <div class="name">Javad Ebrahimizadeh</div>
+        <div>
+            <a href="#articles">Articles</a>
+            <a href="#research">Research</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#cv">CV</a>
+        </div>
     </div>
 
-    <h2>About Me</h2>
+    <div class="main">
 
-    <p>
-        I hold a PhD in Electrical and Computer Engineering from KU Leuven, where I also worked as a Research Assistant. My expertise lies in electromagnetics (EM), RF and microwave engineering, wireless communications, and the integration of machine learning with RF systems.
-    </p>
+        <div class="sidebar">
+            <img src="photo.jpeg" alt="Javad Ebrahimizadeh">
 
-    <p>
-        My research focuses on wireless propagation, channel modeling, and the application of neural networks in RF and microwave systems. I have extensive experience in designing and simulating millimeter-wave (mmWave) channels using ray tracing techniques, as well as developing channel state information feedback systems powered by neural networks.
-    </p>
+            <h2>Javad Ebrahimizadeh</h2>
 
-    <p>
-        I am skilled in EM simulation and RF system design using tools such as HFSS, CST, ADS, and MATLAB/Simulink. My work includes antenna design, phased array systems, and modeling complex RF architectures to optimize performance and efficiency.
-    </p>
+            <p>
+                RF & Microwave Engineer<br>
+                PhD in Electrical and Computer Engineering
+            </p>
 
-    <p>
-        Currently, I work as an RF Designer, where I design high-efficiency microwave sources based on magnetron technologies. Using COMSOL and HFSS, I develop and simulate high-power electromagnetic sources in L-band and C-band frequencies, contributing to improved performance, reliability, and efficiency.
-    </p>
+            <p>
+                Leuven, Belgium
+            </p>
 
-    <!-- 🔥 ID added for navigation -->
-    <h2 id="research">Research Interests</h2>
-    <ul>
-        <li>Microwave Imaging</li>
-        <li>Electromagnetic Modeling</li>
-        <li>Machine Learning for RF Systems</li>
-        <li>Inverse Problems and Signal Processing</li>
-    </ul>
+            <a href="https://www.linkedin.com/in/javad-ebrahimizadeh-81b710183/" target="_blank">💼 LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=nlWMysEAAAAJ&hl=en&oi=ao" target="_blank">🎓 Google Scholar</a>
+            <a href="#" target="_blank">🟢 ORCID</a>
+            <a href="https://github.com/javadeb" target="_blank">🐙 GitHub</a>
+        </div>
 
-    <h2>Projects</h2>
-    <p>
-        (You can list your research projects here later)
-    </p>
+        <div class="content">
 
-    <!-- 🔥 ID added for navigation -->
-    <h2 id="contact">Contact</h2>
-    <ul style="list-style: none; padding: 0; line-height: 1.8;">
-        <li>📧 javadeb68@example.com</li>
-        <li>🐙 <a href="https://github.com/javadeb" target="_blank">GitHub</a></li>
-        <li>💼 <a href="https://www.linkedin.com/in/javad-ebrahimizadeh-81b710183/" target="_blank">LinkedIn</a></li>
-        <li>🎓 <a href="https://scholar.google.com/citations?user=nlWMysEAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></li>
-    </ul>
+            <h1>About Me</h1>
 
-</div>
+            <p>
+                I hold a PhD in Electrical and Computer Engineering from KU Leuven, where I also worked as a Research Assistant. My expertise lies in electromagnetics, RF and microwave engineering, wireless communications, and the integration of machine learning with RF systems.
+            </p>
+
+            <p>
+                My research focuses on wireless propagation, channel modeling, and the application of neural networks in RF and microwave systems. I have extensive experience in designing and simulating millimeter-wave channels using ray tracing techniques, as well as developing channel state information feedback systems powered by neural networks.
+            </p>
+
+            <p>
+                Currently, I work as an RF Designer, where I design high-efficiency microwave sources based on magnetron technologies. Using COMSOL and HFSS, I develop and simulate high-power electromagnetic sources in L-band and C-band frequencies.
+            </p>
+
+            <h2 id="articles">Articles</h2>
+            <ul>
+                <li>Add your journal or conference papers here.</li>
+            </ul>
+
+            <h2 id="research">Research</h2>
+            <ul>
+                <li>Microwave Imaging</li>
+                <li>Electromagnetic Modeling</li>
+                <li>Machine Learning for RF Systems</li>
+                <li>Wireless Channel Modeling</li>
+                <li>Inverse Problems and Signal Processing</li>
+            </ul>
+
+            <h2 id="experiences">Experiences</h2>
+            <ul>
+                <li>RF Designer — High-efficiency microwave sources based on magnetron technologies</li>
+                <li>Research Assistant — KU Leuven</li>
+                <li>PhD Researcher — Electrical and Computer Engineering, KU Leuven</li>
+            </ul>
+
+            <h2 id="cv">CV</h2>
+            <p>
+                You can download my CV using the button below.
+            </p>
+
+            <a class="cv-button" href="CV.pdf" target="_blank">📄 Download CV</a>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
