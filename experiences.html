@@ -1,9 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiences - Javad Ebrahimizadeh</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .experience-card {
+            background: white;
+            padding: 22px;
+            margin-top: 20px;
+            border-radius: 14px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            border-left: 5px solid #0b4ea2;
+        }
+
+        .experience-title {
+            font-size: 21px;
+            font-weight: bold;
+            color: #0b4ea2;
+            margin-bottom: 8px;
+        }
+
+        .experience-place {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        .experience-date {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .experience-card ul {
+            margin-top: 10px;
+            line-height: 1.7;
+        }
+
+        .skill-box {
+            background: white;
+            padding: 18px;
+            margin-top: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .skill-title {
+            font-weight: bold;
+            color: #0b4ea2;
+            margin-bottom: 6px;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,24 +71,254 @@
 </div>
 
 <div class="page-content">
+
     <h1>Experiences</h1>
 
-    <ul>
-        <li>
-            <strong>RF Designer</strong><br>
-            Design of high-efficiency microwave sources based on magnetron technologies.
-        </li>
+    <p>
+        Professional, academic, and research experience in RF and microwave engineering,
+        wireless communications, millimeter-wave channel modeling, bio-electromagnetics,
+        phased arrays, and machine learning for electromagnetic systems.
+    </p>
 
-        <li>
-            <strong>Research Assistant — KU Leuven</strong><br>
-            Research in RF systems, microwave engineering, wireless propagation, and electromagnetic modeling.
-        </li>
+    <h2>Professional and Research Experience</h2>
 
-        <li>
-            <strong>PhD Researcher — KU Leuven</strong><br>
-            PhD in Electrical and Computer Engineering with focus on RF, microwave systems, and wireless communication.
-        </li>
-    </ul>
+    <div class="experience-card">
+        <div class="experience-title">RF & Microwave Engineer</div>
+        <div class="experience-place">MEAM Company — Houthalen-Helchteren, Belgium</div>
+        <div class="experience-date">2025 — Present</div>
+        <ul>
+            <li>Working on high-power microwave systems for industrial applications.</li>
+            <li>RF and microwave design for microwave-based heating and drying systems.</li>
+            <li>Development of microwave sources and applied electromagnetic systems.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">PhD Researcher</div>
+        <div class="experience-place">KU Leuven — Leuven, Belgium</div>
+        <div class="experience-date">2021 — 2025</div>
+        <ul>
+            <li>Research on wireless propagation, active phased arrays, and millimeter-wave channel modeling.</li>
+            <li>Developed RCS-based quasi-deterministic ray tracing methods for mmWave channel modeling.</li>
+            <li>Worked on dual-beam phased-array antenna systems for satellite communication.</li>
+            <li>Applied machine learning to channel feedback, RCS prediction, and RF system modeling.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Massive MIMO Signal Processing Intern</div>
+        <div class="experience-place">Sony Research Center — Lund, Sweden</div>
+        <div class="experience-date">Jan. 2024 — Mar. 2024</div>
+        <ul>
+            <li>Worked on massive MIMO signal processing using machine learning.</li>
+            <li>Developed neural-network-aided SVD methods for channel state information feedback.</li>
+            <li>Studied compressed CSI feedback systems for massive MISO/MIMO applications.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">On-Glass Antenna Researcher</div>
+        <div class="experience-place">AGC Glass Company — Charleroi, Belgium</div>
+        <div class="experience-date">2020 — 2021</div>
+        <ul>
+            <li>Designed and simulated wire antennas on realistic car backshield glass.</li>
+            <li>Worked on AM, FM, DAB, and TV antenna bands using Altair FEKO.</li>
+            <li>Fabricated and tuned automotive glass antennas in an anechoic chamber.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Microwave Sensor Researcher</div>
+        <div class="experience-place">Ångström Laboratory, Uppsala University — Uppsala, Sweden</div>
+        <div class="experience-date">2018 — 2019</div>
+        <ul>
+            <li>Worked on microwave imaging for bone density assessment and osteopenia detection.</li>
+            <li>Designed and fabricated UWB on-body antennas for fat intra-body communication.</li>
+            <li>Contributed to biomedical microwave sensing and wearable antenna research.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Researcher — Applied Electromagnetic Research Center</div>
+        <div class="experience-place">University of Tehran — Tehran, Iran</div>
+        <div class="experience-date">2016 — 2018</div>
+        <ul>
+            <li>Tested and certified antennas and RF active/passive components.</li>
+            <li>Performed antenna radiation pattern, peak gain, RCS, and RF circuit measurements.</li>
+            <li>Worked with VNA, signal generator, spectrum analyzer, probing station, and antenna measurement systems.</li>
+        </ul>
+    </div>
+
+    <h2>Notable Projects</h2>
+
+    <div class="experience-card">
+        <div class="experience-title">RCS Simulator Software Accelerated by Machine Learning</div>
+        <div class="experience-place">Sony Company and KU Leuven</div>
+        <div class="experience-date">2024</div>
+        <ul>
+            <li>Developed Python software for bistatic RCS scattering calculation.</li>
+            <li>Combined Physical Optics-Geometrical Optics methods with feedforward neural networks.</li>
+            <li>Used machine learning to accelerate electromagnetic scattering prediction.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Active Phased Array System</div>
+        <div class="experience-place">KU Leuven</div>
+        <div class="experience-date">2023 — 2024</div>
+        <ul>
+            <li>Designed and fabricated a dual-beam phased array for satellite communication.</li>
+            <li>Worked on a 64-element uniform rectangular array at X-band.</li>
+            <li>Used MATLAB, HFSS, CST, ADS, and SystemVue.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Millimeter-Wave MIMO Channel Measurement</div>
+        <div class="experience-place">Lund University — Sweden</div>
+        <div class="experience-date">2023</div>
+        <ul>
+            <li>Performed mmWave channel modeling and characterization using ray tracing.</li>
+            <li>Supported measurement campaign validation using a 28 GHz MIMO channel sounder.</li>
+            <li>Processed measured data for multipath component classification.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Wireless Channel Modeling and Characterization</div>
+        <div class="experience-place">KU Leuven</div>
+        <div class="experience-date">2021</div>
+        <ul>
+            <li>Developed quasi-deterministic ray tracing methods for mmWave wireless channels.</li>
+            <li>Generated statistical channel parameters with lower complexity than deterministic ray tracing.</li>
+        </ul>
+    </div>
+
+    <h2>Teaching Experience</h2>
+
+    <div class="experience-card">
+        <div class="experience-title">Teaching Assistant — Electromagnetic Compatibility</div>
+        <div class="experience-place">KU Leuven — Belgium</div>
+        <div class="experience-date">2023</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Teaching Assistant — Robotics Laboratory</div>
+        <div class="experience-place">Uppsala University — Sweden</div>
+        <div class="experience-date">2018 — 2019</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Teaching Assistant — Antenna Laboratory</div>
+        <div class="experience-place">Uppsala University — Sweden</div>
+        <div class="experience-date">2018 — 2019</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Teaching Assistant — Advanced Mathematics</div>
+        <div class="experience-place">University of Tehran — Iran</div>
+        <div class="experience-date">2014 — 2015</div>
+    </div>
+
+    <h2>Conferences and Presentations</h2>
+
+    <div class="experience-card">
+        <div class="experience-title">Neural Network for Massive MIMO Applications</div>
+        <div class="experience-place">Sony Research Center — Sweden</div>
+        <div class="experience-date">2024</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">18th European Conference on Antennas and Propagation</div>
+        <div class="experience-place">Glasgow, Scotland</div>
+        <div class="experience-date">2024</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">European Microwave Week</div>
+        <div class="experience-place">Berlin, Germany</div>
+        <div class="experience-date">2023</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">IEEE International Symposium on Antennas and Propagation / URSI</div>
+        <div class="experience-place">Portland, Oregon, USA</div>
+        <div class="experience-date">2023</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Practical Aspects of Private Wireless Networks</div>
+        <div class="experience-place">Nokia Bell Labs — Espoo, Finland</div>
+        <div class="experience-date">2023</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Summer School of Information Engineering</div>
+        <div class="experience-place">Rome, Italy</div>
+        <div class="experience-date">2022</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">CoNEXT 2022</div>
+        <div class="experience-place">Rome, Italy</div>
+        <div class="experience-date">2022</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">13th European Conference on Antennas and Propagation</div>
+        <div class="experience-place">Krakow, Poland</div>
+        <div class="experience-date">2019</div>
+    </div>
+
+    <h2>Honors and Awards</h2>
+
+    <div class="experience-card">
+        <div class="experience-title">Marie Skłodowska-Curie Scholarship</div>
+        <div class="experience-place">MINTS European Training Network</div>
+        <div class="experience-date">2021</div>
+        <ul>
+            <li>European Training Network on Millimeter-Wave Networking and Sensing for Beyond 5G.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">Iranian Patent and Best Master Thesis Recognition</div>
+        <div class="experience-place">University of Tehran</div>
+        <div class="experience-date">2015</div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-title">National University Entrance Exam</div>
+        <div class="experience-place">Iran</div>
+        <div class="experience-date">2012</div>
+        <ul>
+            <li>Ranked 47th among approximately 75,000 participants.</li>
+        </ul>
+    </div>
+
+    <h2>Skills</h2>
+
+    <div class="skill-box">
+        <div class="skill-title">Software</div>
+        HFSS, CST, Altair FEKO, Altium Designer, ADS, SystemVue, COMSOL
+    </div>
+
+    <div class="skill-box">
+        <div class="skill-title">Programming</div>
+        Python, MATLAB, Mathematica
+    </div>
+
+    <div class="skill-box">
+        <div class="skill-title">RF and Microwave Instruments</div>
+        VNA, Oscilloscope, Spectrum Analyzer, Power Meter, Anechoic Chamber, USRP Software-Defined Radio
+    </div>
+
+    <div class="skill-box">
+        <div class="skill-title">Research Areas</div>
+        High-Power Microwave Systems, Massive MIMO, 5G/Beyond-5G, Millimeter-Wave Channel Modeling,
+        Hybrid Phased Arrays, Beamforming, Microwave Antennas, Signal Processing, Machine Learning
+    </div>
+
 </div>
 
 </body>
