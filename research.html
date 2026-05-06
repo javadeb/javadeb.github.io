@@ -1,37 +1,472 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research - Javad Ebrahimizadeh</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fb;
+            color: #222;
+        }
+
+        .navbar {
+            background-color: #0b1f3a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar .name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #7ec8ff;
+        }
+
+        .page-content {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 30px;
+        }
+
+        h1 {
+            color: #0b1f3a;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #123d6b;
+            margin-top: 45px;
+            border-bottom: 2px solid #dbe4f0;
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .metrics {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-top: 20px;
+        }
+
+        .metrics span {
+            display: inline-block;
+            margin-right: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #0b1f3a;
+        }
+
+        .publication-list {
+            margin-top: 25px;
+        }
+
+        .publication {
+            background: white;
+            padding: 22px;
+            margin-bottom: 22px;
+            border-radius: 14px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .publication:hover {
+            transform: translateY(-3px);
+        }
+
+        .publication-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #0b1f3a;
+            margin-bottom: 10px;
+        }
+
+        .authors {
+            color: #444;
+            margin-bottom: 8px;
+        }
+
+        .journal {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .year {
+            font-weight: bold;
+            color: #0b1f3a;
+        }
+
+        .citations {
+            color: #0c7a2d;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #0b1f3a;
+            color: white;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar div:last-child {
+                margin-top: 12px;
+            }
+
+            .navbar a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
 
-<div class="navbar">
-    <div class="name">Javad Ebrahimizadeh</div>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="articles.html">Articles</a>
-        <a href="research.html">Research</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="cv.html">CV</a>
+    <div class="navbar">
+        <div class="name">Javad Ebrahimizadeh</div>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="research.html">Research</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="cv.html">CV</a>
+        </div>
     </div>
-</div>
 
-<div class="page-content">
-    <h1>Research</h1>
+    <div class="page-content">
 
-    <ul>
-        <li>Microwave Imaging</li>
-        <li>Electromagnetic Modeling</li>
-        <li>Machine Learning for RF Systems</li>
-        <li>Wireless Channel Modeling</li>
-        <li>Inverse Problems and Signal Processing</li>
-        <li>Microwave Heating and Dielectric Material Characterization</li>
-        <li>Neural Networks for Channel Extrapolation</li>
-    </ul>
-</div>
+        <h1>Research</h1>
+
+        <p>
+            PhD researcher at KU Leuven working on applied electromagnetics,
+            microwave imaging, wireless propagation, RF sensing,
+            machine learning for communication systems,
+            and inverse electromagnetic problems.
+        </p>
+
+        <h2>Research Interests</h2>
+
+        <ul>
+            <li>Microwave Imaging</li>
+            <li>Electromagnetic Modeling</li>
+            <li>Machine Learning for RF Systems</li>
+            <li>Wireless Channel Modeling</li>
+            <li>Inverse Problems and Signal Processing</li>
+            <li>Microwave Heating and Dielectric Material Characterization</li>
+            <li>Neural Networks for Channel Extrapolation</li>
+            <li>Millimeter-Wave Propagation and Ray Tracing</li>
+            <li>Biomedical Microwave Sensing</li>
+        </ul>
+
+        <h2>Google Scholar Metrics</h2>
+
+        <div class="metrics">
+            <span>Citations: 226</span>
+            <span>h-index: 8</span>
+            <span>i10-index: 8</span>
+        </div>
+
+        <h2>Selected Publications</h2>
+
+        <div class="publication-list">
+
+            <div class="publication">
+                <div class="publication-title">
+                    Limited CSI Feedback System for Massive MISO: A Neural Network-Aided SVD Approach
+                </div>
+
+                <div class="authors">
+                    J. Ebrahimizadeh, F. Rusek, E. Bengtsson, J. Flordelis,
+                    E. Vinogradov, et al.
+                </div>
+
+                <div class="journal">
+                    IEEE Transactions on Antennas and Propagation
+                </div>
+
+                <div class="year">2025</div>
+
+                <div class="citations">Citations: 2</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    RCS-Based 3-D Millimeter-Wave Channel Modeling Using Quasi-Deterministic Ray Tracing
+                </div>
+
+                <div class="authors">
+                    J. Ebrahimizadeh, A. Madannejad, X. Cai,
+                    E. Vinogradov, et al.
+                </div>
+
+                <div class="journal">
+                    IEEE Transactions on Antennas and Propagation
+                </div>
+
+                <div class="year">2024</div>
+
+                <div class="citations">Citations: 18</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    Accelerating the Physical Optics-Geometrical Optics Method for Calculating RCS by Machine Learning
+                </div>
+
+                <div class="authors">
+                    J. Ebrahimizadeh, G. A. E. Vandenbosch
+                </div>
+
+                <div class="journal">
+                    54th European Microwave Conference (EuMC)
+                </div>
+
+                <div class="year">2024</div>
+
+                <div class="citations">Citations: 2</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    RCS-Based Quasi-Deterministic Ray Tracing for Statistical Channel Modeling
+                </div>
+
+                <div class="authors">
+                    J. Ebrahimizadeh, E. Vinogradov,
+                    G. A. E. Vandenbosch
+                </div>
+
+                <div class="journal">
+                    53rd European Microwave Conference (EuMC)
+                </div>
+
+                <div class="year">2023</div>
+
+                <div class="citations">Citations: 6</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    Polarimetric Bistatic RCS Distribution:
+                    A Sensing Metric for 5G Wireless Communication
+                </div>
+
+                <div class="authors">
+                    J. Ebrahimizadeh, V. Khorashadi-Zadeh,
+                    X. Cai, G. A. E. Vandenbosch
+                </div>
+
+                <div class="journal">
+                    IEEE Globecom Workshops
+                </div>
+
+                <div class="year">2023</div>
+
+                <div class="citations">Citations: 3</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    Analysis of Thickness Variation in Biological Tissues Using Microwave Sensors for Health Monitoring Applications
+                </div>
+
+                <div class="authors">
+                    S. R. M. Shah, N. B. Asan, J. Velander,
+                    J. Ebrahimizadeh, et al.
+                </div>
+
+                <div class="journal">
+                    IEEE Access
+                </div>
+
+                <div class="year">2019</div>
+
+                <div class="citations">Citations: 45</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    Electromagnetic Time-Reversal Imaging of Pinholes in Pipes
+                </div>
+
+                <div class="authors">
+                    J. Ebrahimi-Zadeh, M. Dehmollaian,
+                    K. Mohammadpour-Aghdam
+                </div>
+
+                <div class="journal">
+                    IEEE Transactions on Antennas and Propagation
+                </div>
+
+                <div class="year">2016</div>
+
+                <div class="citations">Citations: 31</div>
+            </div>
+
+        </div>
+
+        <h2>Biomedical Microwave Imaging and Sensing</h2>
+
+        <div class="publication-list">
+
+            <div class="publication">
+                <div class="publication-title">
+                    Non-Invasive Skin Cancer Detection:
+                    A High-Resolution Millimeter-Wave Time Reversal Approach
+                </div>
+
+                <div class="authors">
+                    F. Ravanbakhsh, A. Madannejad,
+                    J. Ebrahimizadeh
+                </div>
+
+                <div class="journal">
+                    19th European Conference on Antennas and Propagation (EuCAP)
+                </div>
+
+                <div class="year">2025</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    Microwave Sensor for Detection of Optical Transparent Foreign Body in Soft Tissue: Eye
+                </div>
+
+                <div class="authors">
+                    S. R. Boroujeni, J. Ebrahimizadeh
+                </div>
+
+                <div class="journal">
+                    18th European Conference on Antennas and Propagation (EuCAP)
+                </div>
+
+                <div class="year">2024</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    Time Reversal Microwave Imaging of Realistic Numerical Head Phantom for Bone Flap Healing Follow-Up
+                </div>
+
+                <div class="authors">
+                    J. EbrahimiZadeh, A. Maananejad,
+                    S. Sadeghi, et al.
+                </div>
+
+                <div class="journal">
+                    IEEE MTT-S International Microwave Biomedical Conference
+                </div>
+
+                <div class="year">2020</div>
+
+                <div class="citations">Citations: 12</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    Non-Invasive Transmission Based Tumor Detection Using Anthropomorphic Breast Phantom at 2.45 GHz
+                </div>
+
+                <div class="authors">
+                    L. Joseph, N. B. Asan,
+                    J. Ebrahimizadeh, et al.
+                </div>
+
+                <div class="journal">
+                    European Conference on Antennas and Propagation
+                </div>
+
+                <div class="year">2020</div>
+
+                <div class="citations">Citations: 18</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">
+                    Electromagnetic Time-Reversal Technique for Monitoring Skull Healing Stages
+                </div>
+
+                <div class="authors">
+                    J. EbrahimiZadeh,
+                    M. D. Perez, R. Augustine
+                </div>
+
+                <div class="journal">
+                    European Conference on Antennas and Propagation
+                </div>
+
+                <div class="year">2019</div>
+
+                <div class="citations">Citations: 7</div>
+            </div>
+
+        </div>
+
+        <h2>Collaborators</h2>
+
+        <ul>
+            <li>Prof. Guy A. E. Vandenbosch — KU Leuven</li>
+            <li>Evgenii Vinogradov — Universitat Politècnica de Catalunya</li>
+            <li>Xuesong Cai — Peking University</li>
+            <li>Fredrik Tufvesson — Lund University</li>
+            <li>Fredrik Rusek — Sony Europe</li>
+            <li>Alireza Madannejad — KTH University</li>
+            <li>Mojtaba Dehmollaian — Polytechnique Montréal</li>
+        </ul>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Javad Ebrahimizadeh | KU Leuven
+    </div>
 
 </body>
+
 </html>
