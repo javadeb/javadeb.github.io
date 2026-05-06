@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Articles - Javad Ebrahimizadeh</title>
-
     <link rel="stylesheet" href="style.css">
 
     <style>
-
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -50,33 +47,33 @@
         .page-content {
             max-width: 1150px;
             margin: auto;
-            padding: 50px 35px;
+            padding: 45px 35px;
         }
 
         h1 {
-            font-size: 46px;
+            font-size: 42px;
             color: #0b1f3a;
             margin-bottom: 15px;
         }
 
         h2 {
-            font-size: 34px;
+            font-size: 28px;
             color: #0b1f3a;
-            margin-top: 60px;
-            margin-bottom: 25px;
+            margin-top: 55px;
+            margin-bottom: 22px;
             border-bottom: 3px solid #0b4ea2;
             padding-bottom: 10px;
         }
 
         .intro-text {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.8;
             color: #444;
         }
 
         .metrics {
             background: white;
-            padding: 22px;
+            padding: 20px;
             border-radius: 14px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
             margin-top: 25px;
@@ -84,187 +81,388 @@
 
         .metrics span {
             display: inline-block;
-            margin-right: 35px;
-            font-size: 18px;
+            margin-right: 30px;
+            font-size: 16px;
             font-weight: bold;
             color: #0b1f3a;
         }
 
         .publication {
             background: white;
-            padding: 28px;
-            margin-top: 28px;
-            border-radius: 16px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-            border-left: 6px solid #0056b3;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 14px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-left: 5px solid #0056b3;
         }
 
         .publication-title {
-            font-size: 24px;
+            font-size: 19px;
             font-weight: 900;
             color: #0056b3;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
             border-bottom: 2px solid #d9e6f7;
         }
 
         .authors {
             color: #333;
-            margin-bottom: 10px;
-            line-height: 1.8;
-            font-size: 16px;
+            margin-bottom: 7px;
+            line-height: 1.6;
+            font-size: 14px;
         }
 
         .journal {
             color: #555;
             font-style: italic;
-            margin-bottom: 10px;
-            font-size: 16px;
+            margin-bottom: 7px;
+            font-size: 14px;
         }
 
         .year {
             font-weight: bold;
             color: #111;
-            font-size: 17px;
-            margin-top: 10px;
+            font-size: 14px;
+            margin-top: 6px;
         }
 
         .citations {
             color: #0c7a2d;
             font-weight: bold;
-            margin-top: 10px;
-            font-size: 16px;
+            margin-top: 6px;
+            font-size: 14px;
         }
 
-    </style>
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
+            .navbar div:last-child {
+                margin-top: 12px;
+            }
+
+            .navbar a {
+                display: inline-block;
+                margin-left: 0;
+                margin-right: 14px;
+                margin-top: 8px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .publication-title {
+                font-size: 17px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="navbar">
+<div class="navbar">
+    <div class="name">Javad Ebrahimizadeh</div>
 
-        <div class="name">
-            Javad Ebrahimizadeh
-        </div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="research.html">Research</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog Posts</a>
+        <a href="cv.html">CV</a>
+    </div>
+</div>
 
-        <div>
-            <a href="index.html">Home</a>
-            <a href="articles.html">Articles</a>
-            <a href="research.html">Research</a>
-            <a href="experiences.html">Experiences</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog Posts</a>
-            <a href="cv.html">CV</a>
-        </div>
+<div class="page-content">
 
+    <h1>Publications & Research Articles</h1>
+
+    <p class="intro-text">
+        Publications in <strong>applied electromagnetics</strong>,
+        <strong>5G/6G wireless channel modeling</strong>,
+        <strong>bio-electromagnetics</strong>,
+        <strong>microwave imaging</strong>,
+        <strong>RF sensing</strong>,
+        <strong>electromagnetic inverse problems</strong>,
+        and <strong>machine learning for RF and wireless systems</strong>.
+    </p>
+
+    <div class="metrics">
+        <span>📚 Citations: 226</span>
+        <span>📈 h-index: 8</span>
+        <span>🏆 i10-index: 8</span>
     </div>
 
-    <div class="page-content">
+    <h2>Journal Articles</h2>
 
-        <h1>Publications & Research Articles</h1>
-
-        <p class="intro-text">
-            Research publications in <strong>5G/6G wireless communication</strong>,
-            <strong>millimeter-wave channel modeling</strong>,
-            <strong>bio-electromagnetics</strong>,
-            <strong>microwave imaging</strong>,
-            <strong>RF sensing</strong>,
-            <strong>electromagnetic inverse problems</strong>,
-            and <strong>machine learning for wireless systems</strong>.
-        </p>
-
-        <div class="metrics">
-            <span>📚 Citations: 226</span>
-            <span>📈 h-index: 8</span>
-            <span>🏆 i10-index: 8</span>
-        </div>
-
-        <h2>Journal Articles</h2>
-
-        <div class="publication">
-
-            <div class="publication-title">
-                1. Analysis of Thickness Variation in Biological Tissues Using Microwave Sensors for Health Monitoring Applications
-            </div>
-
-            <div class="authors">
-                S. R. M. Shah, N. B. Asan, J. Velander,
-                <strong>J. Ebrahimizadeh</strong>, M. D. Perez, et al.
-            </div>
-
-            <div class="journal">
-                IEEE Access, Vol. 7, pp. 156033–156043
-            </div>
-
-            <div class="year">
-                Year: 2019
-            </div>
-
-            <div class="citations">
-                Citations: 45
-            </div>
-
-        </div>
-
-        <div class="publication">
-
-            <div class="publication-title">
-                2. Electromagnetic Time-Reversal Imaging of Pinholes in Pipes
-            </div>
-
-            <div class="authors">
-                <strong>J. Ebrahimi-Zadeh</strong>,
-                M. Dehmollaian,
-                K. Mohammadpour-Aghdam
-            </div>
-
-            <div class="journal">
-                IEEE Transactions on Antennas and Propagation,
-                Vol. 64(4), pp. 1356–1363
-            </div>
-
-            <div class="year">
-                Year: 2016
-            </div>
-
-            <div class="citations">
-                Citations: 31
-            </div>
-
-        </div>
-
-        <div class="publication">
-
-            <div class="publication-title">
-                3. RCS-Based 3-D Millimeter-Wave Channel Modeling Using Quasi-Deterministic Ray Tracing
-            </div>
-
-            <div class="authors">
-                <strong>J. Ebrahimizadeh</strong>,
-                A. Madannejad,
-                X. Cai,
-                E. Vinogradov,
-                et al.
-            </div>
-
-            <div class="journal">
-                IEEE Transactions on Antennas and Propagation,
-                Vol. 72(4), pp. 3596–3606
-            </div>
-
-            <div class="year">
-                Year: 2024
-            </div>
-
-            <div class="citations">
-                Citations: 18
-            </div>
-
-        </div>
-
+    <div class="publication">
+        <div class="publication-title">1. Analysis of Thickness Variation in Biological Tissues Using Microwave Sensors for Health Monitoring Applications</div>
+        <div class="authors">S. R. M. Shah, N. B. Asan, J. Velander, <strong>J. Ebrahimizadeh</strong>, M. D. Perez, et al.</div>
+        <div class="journal">IEEE Access, Vol. 7, pp. 156033–156043</div>
+        <div class="year">Year: 2019</div>
+        <div class="citations">Citations: 45</div>
     </div>
+
+    <div class="publication">
+        <div class="publication-title">2. Electromagnetic Time-Reversal Imaging of Pinholes in Pipes</div>
+        <div class="authors"><strong>J. Ebrahimi-Zadeh</strong>, M. Dehmollaian, K. Mohammadpour-Aghdam</div>
+        <div class="journal">IEEE Transactions on Antennas and Propagation, Vol. 64(4), pp. 1356–1363</div>
+        <div class="year">Year: 2016</div>
+        <div class="citations">Citations: 31</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">3. RCS-Based 3-D Millimeter-Wave Channel Modeling Using Quasi-Deterministic Ray Tracing</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, A. Madannejad, X. Cai, E. Vinogradov, et al.</div>
+        <div class="journal">IEEE Transactions on Antennas and Propagation, Vol. 72(4), pp. 3596–3606</div>
+        <div class="year">Year: 2024</div>
+        <div class="citations">Citations: 18</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">4. Limited CSI Feedback System for Massive MISO: A Neural Network-Aided SVD Approach</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, F. Rusek, E. Bengtsson, J. Flordelis, E. Vinogradov, et al.</div>
+        <div class="journal">IEEE Transactions on Antennas and Propagation</div>
+        <div class="year">Year: 2025</div>
+        <div class="citations">Citations: 2</div>
+    </div>
+
+    <h2>Conference Publications</h2>
+
+    <div class="publication">
+        <div class="publication-title">5. Non-Invasive Transmission Based Tumor Detection Using Anthropomorphic Breast Phantom at 2.45 GHz</div>
+        <div class="authors">L. Joseph, N. B. Asan, <strong>J. Ebrahimizadeh</strong>, A. S. Chezhian, M. D. Perez, T. Voigt, et al.</div>
+        <div class="journal">2020 14th European Conference on Antennas and Propagation (EuCAP), pp. 1–5</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 18</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">6. Clustering of Dielectric and Colour Profiles of an Ex-Vivo Burnt Human Skin Sample</div>
+        <div class="authors">P. K. B. Rangaiah, <strong>J. Ebrahimizadeh</strong>, A. H. Nagaraju, I. El-Ali, M. Kouki, et al.</div>
+        <div class="journal">2020 14th European Conference on Antennas and Propagation (EuCAP), pp. 1–5</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 17</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">7. Time Reversal Microwave Imaging of Realistic Numerical Head Phantom for Bone Flap Healing Follow-Up</div>
+        <div class="authors"><strong>J. EbrahimiZadeh</strong>, A. Maananejad, S. Sadeghi, R. L. Karlsson, B. Mandal, et al.</div>
+        <div class="journal">2020 IEEE MTT-S International Microwave Biomedical Conference (IMBioC), pp. 1–4</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 12</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">8. Design of Constant Width Branch Line Directional Coupler for the Microwave Sensing Application</div>
+        <div class="authors">P. K. B. Rangaiah, <strong>J. Ebrahimizadeh</strong>, J. Velander, R. Karlsson, B. Mandal, et al.</div>
+        <div class="journal">2020 14th European Conference on Antennas and Propagation (EuCAP), pp. 1–5</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 11</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">9. Miniaturized CPW-Fed Bowtie Slot Antenna for Wearable Biomedical Applications</div>
+        <div class="authors">A. Arayeshnia, A. Madannejad, <strong>J. Ebrahimizadeh</strong>, F. Ravanbakhsh, et al.</div>
+        <div class="journal">2020 14th European Conference on Antennas and Propagation (EuCAP), pp. 1–4</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 10</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">10. A New Focused Hyperthermia Based on Space-Frequency DORT</div>
+        <div class="authors">S. Sadeghi, A. Madannejad, F. Ravanbakhsh, <strong>J. EbrahimiZadeh</strong>, M. D. Perez, et al.</div>
+        <div class="journal">2020 14th European Conference on Antennas and Propagation (EuCAP), pp. 1–3</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 7</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">11. Electromagnetic Time-Reversal Technique for Monitoring Skull Healing Stages</div>
+        <div class="authors"><strong>J. EbrahimiZadeh</strong>, M. D. Perez, R. Augustine</div>
+        <div class="journal">2019 13th European Conference on Antennas and Propagation (EuCAP), pp. 1–5</div>
+        <div class="year">Year: 2019</div>
+        <div class="citations">Citations: 7</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">12. Electromagnetic DORT Time Reversal Dielectric Spectroscopy</div>
+        <div class="authors">J. E. Zadeh, H. Balegh, R. Fallahi</div>
+        <div class="journal">2016 8th International Symposium on Telecommunications (IST), pp. 437–441</div>
+        <div class="year">Year: 2016</div>
+        <div class="citations">Citations: 7</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">13. RCS-Based Quasi-Deterministic Ray Tracing for Statistical Channel Modeling</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, E. Vinogradov, G. A. E. Vandenbosch</div>
+        <div class="journal">2023 53rd European Microwave Conference (EuMC), pp. 717–720</div>
+        <div class="year">Year: 2023</div>
+        <div class="citations">Citations: 6</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">14. Microwave Beamforming for Non-Invasive Brain Stimulation</div>
+        <div class="authors">A. Madannejad, S. Sadeghi, <strong>J. EbrahimiZadeh</strong>, F. Ravanbakhsh, M. D. Perez, et al.</div>
+        <div class="journal">2020 IEEE MTT-S International Microwave Biomedical Conference (IMBioC), pp. 1–4</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 6</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">15. Time Reversal Microwave Imaging of Realistic Numerical Head Phantom for Bone Flap Healing Follow-Up</div>
+        <div class="authors"><strong>J. EbrahimiZadeh</strong>, A. Maananejad, S. Sadeghi, R. L. Karlsson, B. Mandal, et al.</div>
+        <div class="journal">IEEE Publication Record</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 6</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">16. Low Profile Implantable Antenna for Fat Intra-Body Communication</div>
+        <div class="authors">B. Mandal, L. Joseph, <strong>J. Ebrahimizadeh</strong>, M. D. Perez, D. Mitra, R. Augustine</div>
+        <div class="journal">2020 14th European Conference on Antennas and Propagation (EuCAP), pp. 1–4</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 4</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">17. Millimeter-Wave Scattering from Building Facade: A Simulation and Verification Study</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, V. Khorashadi-Zadeh, X. Cai, F. Tufvesson, et al.</div>
+        <div class="journal">2024 18th European Conference on Antennas and Propagation (EuCAP), pp. 1–5</div>
+        <div class="year">Year: 2024</div>
+        <div class="citations">Citations: 3</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">18. Polarimetric Bistatic RCS Distribution: A Sensing Metric for 5G Wireless Communication</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, V. Khorashadi-Zadeh, X. Cai, G. A. E. Vandenbosch</div>
+        <div class="journal">2023 IEEE Globecom Workshops (GC Wkshps), pp. 1183–1188</div>
+        <div class="year">Year: 2023</div>
+        <div class="citations">Citations: 3</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">19. Reflectometry Enhancement by Saline Injection in Microwave-Based Skin Burn Injury Diagnosis</div>
+        <div class="authors">A. Madannejad, <strong>J. EbrahimiZadeh</strong>, F. Ravanbakhsh, M. D. Perez, et al.</div>
+        <div class="journal">2020 14th European Conference on Antennas and Propagation (EuCAP), pp. 1–4</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 3</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">20. Pathloss Calculation for Fat-Intra Body Communication Using Poynting Vector Theory</div>
+        <div class="authors"><strong>J. EbrahimiZadeh</strong>, S. A. A. Jahromi, M. D. Perez, R. Augustine</div>
+        <div class="journal">2020 14th European Conference on Antennas and Propagation (EuCAP), pp. 1–5</div>
+        <div class="year">Year: 2020</div>
+        <div class="citations">Citations: 3</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">21. Ultra-Wideband Electromagnetic Space-Frequency Time Reversal Beamforming in a Rectangular Metal Tube</div>
+        <div class="authors"><strong>J. Ebrahimi-Zadeh</strong>, M. Dehmollaian, K. Mohammadpour-Aghdam</div>
+        <div class="journal">2016 24th Iranian Conference on Electrical Engineering (ICEE), pp. 849–853</div>
+        <div class="year">Year: 2016</div>
+        <div class="citations">Citations: 3</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">22. Accelerating the Physical Optics-Geometrical Optics Method for Calculating RCS by Machine Learning</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, G. A. E. Vandenbosch</div>
+        <div class="journal">2024 54th European Microwave Conference (EuMC), pp. 964–967</div>
+        <div class="year">Year: 2024</div>
+        <div class="citations">Citations: 2</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">23. Ultra Wideband Electromagnetic DORT Time-Reversal Localization of Single-Defect in Pipe</div>
+        <div class="authors"><strong>J. Ebrahimi-Zadeh</strong>, M. Dehmollaian, K. Mohammadpour-Aghdam</div>
+        <div class="journal">2016 8th International Symposium on Telecommunications (IST), pp. 409–414</div>
+        <div class="year">Year: 2016</div>
+        <div class="citations">Citations: 1</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">24. Ultra Wideband Electromagnetic DORT Time-Reversal Localization of Single-Defect in Metal Pipes</div>
+        <div class="authors"><strong>J. Ebrahimi-Zadeh</strong>, M. Dehmollaian, K. Mohammadpour-Aghdam</div>
+        <div class="journal">IEEE Antennas and Propagation / EuCAP Accepted</div>
+        <div class="year">Year: 2016</div>
+        <div class="citations">Citations: 1</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">25. Limited and Compressed CSI Feedback System for Massive MISO Using Neural Network</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, E. Vinogradov, G. A. E. Vandenbosch</div>
+        <div class="journal">2025 16th IFIP Wireless and Mobile Networking Conference (WMNC), pp. 120–126</div>
+        <div class="year">Year: 2025</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">26. Non-Invasive Skin Cancer Detection: A High-Resolution Millimeter-Wave Time Reversal Approach</div>
+        <div class="authors">F. Ravanbakhsh, A. Madannejad, <strong>J. Ebrahimizadeh</strong></div>
+        <div class="journal">2025 19th European Conference on Antennas and Propagation (EuCAP), pp. 1–4</div>
+        <div class="year">Year: 2025</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">27. Millimeter-Wave Scattering Model Based on RCS Distribution: A Simulation and Verification Study</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, X. Cai, J. Sanchez, E. Vinogradov, F. Tufvesson, et al.</div>
+        <div class="journal">2024 IEEE Globecom Workshops (GC Wkshps), pp. 1–6</div>
+        <div class="year">Year: 2024</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">28. Microwave Sensor for Detection of Optical Transparent Foreign Body in Soft Tissue: Eye</div>
+        <div class="authors">S. R. Boroujeni, <strong>J. Ebrahimizadeh</strong></div>
+        <div class="journal">2024 18th European Conference on Antennas and Propagation (EuCAP), pp. 1–4</div>
+        <div class="year">Year: 2024</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">29. Bone Tissue Chirality: A Feasibility Study in Microwave Sensing for Non-Invasive Health Assessment</div>
+        <div class="authors">A. Nafar, <strong>J. Ebrahimizadeh</strong>, K. M. Aghdam, G. A. E. Vandenbosch, E. Mehrshahi, et al.</div>
+        <div class="journal">2023 IEEE MTT-S International Microwave Biomedical Conference (IMBioC), pp. 1–3</div>
+        <div class="year">Year: 2023</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">30. Low-Loss Multi-Beam Large Phased Array Architecture</div>
+        <div class="authors">M. A. Panahi, <strong>J. Ebrahimizadeh</strong>, M. Hedayati, G. Morozowsky, Y. E. Wang</div>
+        <div class="journal">2023 IEEE International Symposium on Antennas and Propagation and USNC-URSI</div>
+        <div class="year">Year: 2023</div>
+    </div>
+
+    <h2>Other Publications / Projects</h2>
+
+    <div class="publication">
+        <div class="publication-title">31. Millimeter-Wave RCS-Based Channel Modeling, CSI Feedback System, and Dual Beam Phased Array Module</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, G. Vandenbosch, E. Vinogradov</div>
+        <div class="journal">Publication / Project Record</div>
+        <div class="year">Year: 2025</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">32. B5G MINTS Project</div>
+        <div class="authors"><strong>J. Ebrahimizadeh</strong>, G. Vandenbosch, E. Vinogradov</div>
+        <div class="journal">Project Record</div>
+        <div class="year">Year: 2025</div>
+    </div>
+
+    <div class="publication">
+        <div class="publication-title">33. Ultra-Wideband Electromagnetic Space-Frequency Time Reversal Beamforming in a Rectangular Metal</div>
+        <div class="authors">M. Dehmollaian, K. M. Aghdam</div>
+        <div class="journal">Publication Record</div>
+    </div>
+
+</div>
 
 </body>
 </html>
