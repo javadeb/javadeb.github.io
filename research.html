@@ -2,9 +2,13 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Research - Javad Ebrahimizadeh</title>
+
+    <link rel="stylesheet" href="style.css">
 
     <style>
 
@@ -22,9 +26,9 @@
             justify-content: space-between;
             align-items: center;
             padding: 18px 40px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
+            z-index: 1000;
         }
 
         .navbar .name {
@@ -37,7 +41,7 @@
             text-decoration: none;
             margin-left: 22px;
             font-size: 16px;
-            transition: 0.3s;
+            font-weight: 500;
         }
 
         .navbar a:hover {
@@ -45,39 +49,43 @@
         }
 
         .page-content {
-            max-width: 1100px;
+            max-width: 1150px;
             margin: auto;
-            padding: 50px 30px;
+            padding: 50px 35px;
         }
 
         h1 {
+            font-size: 46px;
             color: #0b1f3a;
-            font-size: 42px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         h2 {
-            color: #123d6b;
-            margin-top: 50px;
-            border-bottom: 2px solid #dbe4f0;
+            font-size: 32px;
+            color: #0b1f3a;
+            margin-top: 60px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #0b4ea2;
             padding-bottom: 10px;
         }
 
-        p {
-            line-height: 1.7;
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #444;
         }
 
         .metrics {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 22px;
+            border-radius: 14px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         .metrics span {
             display: inline-block;
-            margin-right: 30px;
+            margin-right: 35px;
             font-size: 18px;
             font-weight: bold;
             color: #0b1f3a;
@@ -85,52 +93,61 @@
 
         .publication {
             background: white;
-            padding: 22px;
-            margin-top: 20px;
-            border-radius: 14px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .publication:hover {
-            transform: translateY(-3px);
+            padding: 24px;
+            margin-top: 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            border-left: 6px solid #0056b3;
         }
 
         .publication-title {
-            font-size: 20px;
-            font-weight: bold;
-            color: #0b1f3a;
-            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: 900;
+            color: #0056b3;
+            line-height: 1.6;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #d9e6f7;
         }
 
         .authors {
-            color: #444;
-            margin-bottom: 8px;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.8;
+            font-size: 15px;
         }
 
         .journal {
-            color: #666;
+            color: #555;
             font-style: italic;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            font-size: 15px;
         }
 
         .year {
             font-weight: bold;
-            color: #0b1f3a;
+            color: #111;
+            font-size: 16px;
         }
 
         .citations {
             color: #0c7a2d;
             font-weight: bold;
             margin-top: 10px;
+            font-size: 15px;
+        }
+
+        ul {
+            line-height: 2;
+            font-size: 17px;
         }
 
         .footer {
             text-align: center;
-            padding: 30px;
+            padding: 35px;
             background: #0b1f3a;
             color: white;
-            margin-top: 60px;
+            margin-top: 70px;
         }
 
         @media (max-width: 768px) {
@@ -150,41 +167,55 @@
             }
 
             h1 {
-                font-size: 32px;
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 26px;
             }
 
         }
 
     </style>
+
 </head>
 
 <body>
 
     <div class="navbar">
 
-        <div class="navbar">
-    <div class="name">Javad Ebrahimizadeh</div>
+        <div class="name">
+            Javad Ebrahimizadeh
+        </div>
 
-    <div>
-        <a href="index.html">Home</a>
-        <a href="articles.html">Articles</a>
-        <a href="research.html">Research</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog Posts</a>
-        <a href="cv.html">CV</a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="research.html">Research</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog Posts</a>
+            <a href="cv.html">CV</a>
+        </div>
+
     </div>
-</div>
 
     <div class="page-content">
 
         <h1>Research</h1>
 
-        <p>
+        <p class="intro-text">
             PhD Researcher at KU Leuven working on electromagnetic systems,
             wireless communications, machine learning for RF systems,
-            biomedical microwave sensing, and next-generation channel modeling.
+            biomedical microwave sensing, millimeter-wave propagation,
+            massive MIMO systems, and next-generation wireless channel modeling.
         </p>
+
+        <div class="metrics">
+            <span>📚 Citations: 226</span>
+            <span>📈 h-index: 8</span>
+            <span>🏆 i10-index: 8</span>
+        </div>
 
         <h2>Research Areas</h2>
 
@@ -198,15 +229,9 @@
             <li>Inverse Electromagnetic Problems</li>
             <li>Microwave Sensors and Biomedical Applications</li>
             <li>Ray Tracing and RCS-Based Propagation Modeling</li>
+            <li>Massive MIMO and Beamforming</li>
+            <li>Hybrid Phased Array Systems</li>
         </ul>
-
-        <h2>Google Scholar Metrics</h2>
-
-        <div class="metrics">
-            <span>Citations: 226</span>
-            <span>h-index: 8</span>
-            <span>i10-index: 8</span>
-        </div>
 
         <h2>5G and Channel Modeling</h2>
 
@@ -217,17 +242,23 @@
             </div>
 
             <div class="authors">
-                J. Ebrahimizadeh, A. Madannejad,
-                X. Cai, E. Vinogradov, et al.
+                J. Ebrahimizadeh,
+                A. Madannejad,
+                X. Cai,
+                E. Vinogradov, et al.
             </div>
 
             <div class="journal">
                 IEEE Transactions on Antennas and Propagation
             </div>
 
-            <div class="year">2024</div>
+            <div class="year">
+                Year: 2024
+            </div>
 
-            <div class="citations">Citations: 18</div>
+            <div class="citations">
+                Citations: 18
+            </div>
 
         </div>
 
@@ -238,7 +269,8 @@
             </div>
 
             <div class="authors">
-                J. Ebrahimizadeh, E. Vinogradov,
+                J. Ebrahimizadeh,
+                E. Vinogradov,
                 G. A. E. Vandenbosch
             </div>
 
@@ -246,29 +278,13 @@
                 53rd European Microwave Conference (EuMC)
             </div>
 
-            <div class="year">2023</div>
-
-            <div class="citations">Citations: 6</div>
-
-        </div>
-
-        <div class="publication">
-
-            <div class="publication-title">
-                Millimeter-Wave Scattering from Building Facade:
-                A Simulation and Verification Study
+            <div class="year">
+                Year: 2023
             </div>
 
-            <div class="authors">
-                J. Ebrahimizadeh, V. Khorashadi-Zadeh,
-                X. Cai, F. Tufvesson, et al.
+            <div class="citations">
+                Citations: 6
             </div>
-
-            <div class="journal">
-                European Conference on Antennas and Propagation
-            </div>
-
-            <div class="year">2024</div>
 
         </div>
 
@@ -290,9 +306,13 @@
                 IEEE Globecom Workshops
             </div>
 
-            <div class="year">2023</div>
+            <div class="year">
+                Year: 2023
+            </div>
 
-            <div class="citations">Citations: 3</div>
+            <div class="citations">
+                Citations: 3
+            </div>
 
         </div>
 
@@ -317,30 +337,13 @@
                 IEEE Transactions on Antennas and Propagation
             </div>
 
-            <div class="year">2025</div>
-
-            <div class="citations">Citations: 2</div>
-
-        </div>
-
-        <div class="publication">
-
-            <div class="publication-title">
-                Limited and Compressed CSI Feedback System
-                for Massive MISO Using Neural Network
+            <div class="year">
+                Year: 2025
             </div>
 
-            <div class="authors">
-                J. Ebrahimizadeh,
-                E. Vinogradov,
-                G. A. E. Vandenbosch
+            <div class="citations">
+                Citations: 2
             </div>
-
-            <div class="journal">
-                IFIP Wireless and Mobile Networking Conference
-            </div>
-
-            <div class="year">2025</div>
 
         </div>
 
@@ -360,9 +363,13 @@
                 European Microwave Conference (EuMC)
             </div>
 
-            <div class="year">2024</div>
+            <div class="year">
+                Year: 2024
+            </div>
 
-            <div class="citations">Citations: 2</div>
+            <div class="citations">
+                Citations: 2
+            </div>
 
         </div>
 
@@ -371,8 +378,7 @@
         <div class="publication">
 
             <div class="publication-title">
-                Analysis of Thickness Variation in Biological Tissues
-                Using Microwave Sensors for Health Monitoring Applications
+                Analysis of Thickness Variation in Biological Tissues Using Microwave Sensors for Health Monitoring Applications
             </div>
 
             <div class="authors">
@@ -386,30 +392,39 @@
                 IEEE Access
             </div>
 
-            <div class="year">2019</div>
+            <div class="year">
+                Year: 2019
+            </div>
 
-            <div class="citations">Citations: 45</div>
+            <div class="citations">
+                Citations: 45
+            </div>
 
         </div>
 
         <div class="publication">
 
             <div class="publication-title">
-                Non-Invasive Skin Cancer Detection:
-                A High-Resolution Millimeter-Wave Time Reversal Approach
+                Electromagnetic Time-Reversal Imaging of Pinholes in Pipes
             </div>
 
             <div class="authors">
-                F. Ravanbakhsh,
-                A. Madannejad,
-                J. Ebrahimizadeh
+                J. Ebrahimi-Zadeh,
+                M. Dehmollaian,
+                K. Mohammadpour-Aghdam
             </div>
 
             <div class="journal">
-                European Conference on Antennas and Propagation
+                IEEE Transactions on Antennas and Propagation
             </div>
 
-            <div class="year">2025</div>
+            <div class="year">
+                Year: 2016
+            </div>
+
+            <div class="citations">
+                Citations: 31
+            </div>
 
         </div>
 
@@ -430,31 +445,13 @@
                 IEEE MTT-S International Microwave Biomedical Conference
             </div>
 
-            <div class="year">2020</div>
-
-            <div class="citations">Citations: 12</div>
-
-        </div>
-
-        <div class="publication">
-
-            <div class="publication-title">
-                Electromagnetic Time-Reversal Imaging of Pinholes in Pipes
+            <div class="year">
+                Year: 2020
             </div>
 
-            <div class="authors">
-                J. Ebrahimi-Zadeh,
-                M. Dehmollaian,
-                K. Mohammadpour-Aghdam
+            <div class="citations">
+                Citations: 12
             </div>
-
-            <div class="journal">
-                IEEE Transactions on Antennas and Propagation
-            </div>
-
-            <div class="year">2016</div>
-
-            <div class="citations">Citations: 31</div>
 
         </div>
 
