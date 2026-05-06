@@ -1,62 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CV - Javad Ebrahimizadeh</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fb;
+            color: #222;
+        }
+
+        .navbar {
+            background-color: #0b1f3a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navbar a:hover {
+            color: #7ec8ff;
+        }
+
+        .page-content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 35px;
+        }
+
+        h1 {
+            font-size: 46px;
+            color: #0b1f3a;
+            margin-bottom: 15px;
+        }
+
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 35px;
+        }
+
+        .cv-container {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        .button-group {
+            margin-bottom: 30px;
+        }
+
+        .cv-button {
+            display: inline-block;
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 10px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .cv-button:hover {
+            background: #003f85;
+            transform: translateY(-2px);
+        }
+
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ccc;
+            border-radius: 14px;
+        }
+
+        .fallback-text {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .fallback-text a {
+            color: #0056b3;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .fallback-text a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 35px;
+            background: #0b1f3a;
+            color: white;
+            margin-top: 70px;
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar div:last-child {
+                margin-top: 12px;
+            }
+
+            .navbar a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            iframe {
+                height: 500px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-<div class="navbar">
-    <div class="name">Javad Ebrahimizadeh</div>
+    <div class="navbar">
 
-    <div>
-        <a href="index.html">Home</a>
-        <a href="articles.html">Articles</a>
-        <a href="research.html">Research</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog Posts</a>
-        <a href="cv.html">CV</a>
+        <div class="name">
+            Javad Ebrahimizadeh
+        </div>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="research.html">Research</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog Posts</a>
+            <a href="cv.html">CV</a>
+        </div>
+
     </div>
-</div>
 
-<div class="page-content">
+    <div class="page-content">
 
-    <h1>Curriculum Vitae</h1>
+        <h1>Curriculum Vitae</h1>
 
-    <p>
-        You can preview or download my CV below.
-    </p>
+        <p class="intro-text">
+            Download or preview the complete academic and professional CV of
+            <strong>Javad Ebrahimizadeh</strong>,
+            including research experience, publications,
+            technical skills, projects, teaching activities,
+            and professional achievements.
+        </p>
 
-    <!-- ✅ Download -->
-    <a class="cv-button" href="Javad_Ebrahimizadeh_CV.pdf" download>
-        📄 Download CV
-    </a>
+        <div class="cv-container">
 
-    <!-- ✅ Open in new tab -->
-    <a class="cv-button" href="Javad_Ebrahimizadeh_CV.pdf" target="_blank">
-        🔍 Open CV
-    </a>
+            <div class="button-group">
 
-    <br><br>
+                <a class="cv-button"
+                   href="Javad_Ebrahimizadeh_CV.pdf"
+                   download>
+                    📄 Download CV
+                </a>
 
-    <!-- ✅ Embedded preview -->
-    <iframe 
-        src="Javad_Ebrahimizadeh_CV.pdf" 
-        width="100%" 
-        height="700px"
-        style="border:1px solid #ccc; border-radius:10px;">
-    </iframe>
+                <a class="cv-button"
+                   href="Javad_Ebrahimizadeh_CV.pdf"
+                   target="_blank">
+                    🔍 Open CV
+                </a>
 
-    <!-- fallback -->
-    <p>
-        If the preview does not load,
-        <a href="Javad_Ebrahimizadeh_CV.pdf" target="_blank">click here</a>.
-    </p>
+            </div>
 
-</div>
+            <iframe
+                src="Javad_Ebrahimizadeh_CV.pdf">
+            </iframe>
+
+            <p class="fallback-text">
+                If the CV preview does not load properly,
+                <a href="Javad_Ebrahimizadeh_CV.pdf" target="_blank">
+                    click here to open the PDF directly
+                </a>.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Javad Ebrahimizadeh | KU Leuven
+    </div>
 
 </body>
+
 </html>
