@@ -1,72 +1,324 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Javad Ebrahimizadeh</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fb;
+            color: #222;
+        }
+
+        .navbar {
+            background-color: #0b1f3a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navbar a:hover {
+            color: #7ec8ff;
+        }
+
+        .main {
+            display: flex;
+            max-width: 1400px;
+            margin: auto;
+            padding: 50px 30px;
+            gap: 40px;
+        }
+
+        .sidebar {
+            width: 320px;
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            height: fit-content;
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #d9e6f7;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            color: #0b1f3a;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .sidebar p {
+            line-height: 1.8;
+            color: #444;
+            font-size: 16px;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            background: #0b4ea2;
+            color: white;
+            padding: 12px;
+            margin-top: 14px;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-weight: 600;
+        }
+
+        .sidebar a:hover {
+            background: #083a7a;
+        }
+
+        .content {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        .content h1 {
+            font-size: 46px;
+            color: #0b1f3a;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #0b4ea2;
+            padding-bottom: 12px;
+        }
+
+        .content p {
+            font-size: 17px;
+            line-height: 2;
+            color: #333;
+            margin-bottom: 22px;
+            text-align: justify;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 35px;
+            background: #0b1f3a;
+            color: white;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 1000px) {
+
+            .main {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: auto;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar div:last-child {
+                margin-top: 12px;
+            }
+
+            .navbar a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            .content h1 {
+                font-size: 34px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-<div class="navbar">
-    <div class="name">Javad Ebrahimizadeh</div>
+    <div class="navbar">
 
-    <div>
-        <a href="index.html">Home</a>
-        <a href="articles.html">Articles</a>
-        <a href="research.html">Research</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog Posts</a>
-        <a href="cv.html">CV</a>
-    </div>
-</div>
+        <div class="name">
+            Javad Ebrahimizadeh
+        </div>
 
-<div class="main">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="research.html">Research</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog Posts</a>
+            <a href="cv.html">CV</a>
+        </div>
 
-    <div class="sidebar">
-        <img src="photo.jpeg" alt="Javad Ebrahimizadeh">
-
-        <h2>Javad Ebrahimizadeh</h2>
-
-        <p>
-            RF & Microwave Engineer<br>
-            PhD in Electrical and Computer Engineering
-        </p>
-
-        <p>Leuven, Belgium</p>
-
-        <a href="https://www.linkedin.com/in/javad-ebrahimizadeh-81b710183/" target="_blank">💼 LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=nlWMysEAAAAJ&hl=en&oi=ao" target="_blank">🎓 Google Scholar</a>
-        <a href="#" target="_blank">🟢 ORCID</a>
-        <a href="https://github.com/javadeb" target="_blank">🐙 GitHub</a>
     </div>
 
-    <div class="content">
-        <h1>About Me</h1>
+    <div class="main">
 
-<p>
-Hi, I’m <strong>Javad Ebrahimizadeh</strong>, an <strong>RF and microwave engineer</strong> at <strong>MEAM</strong> in Belgium, with a <strong>PhD in Electrical and Computer Engineering</strong> from <strong>KU Leuven</strong>, where I also worked as a <strong>Research Assistant</strong>. My work lies at the intersection of <strong>electromagnetics</strong>, <strong>wireless communications</strong>, and <strong>machine learning</strong>, with a focus on understanding and improving how signals behave in complex environments.
-</p>
+        <div class="sidebar">
 
-<p>
-Over the years, I’ve developed a strong background in <strong>wireless propagation</strong>, <strong>channel modeling</strong>, and <strong>RF system design</strong>. I’ve worked extensively on <strong>millimeter-wave channel simulations</strong> using <strong>ray tracing techniques</strong>, as well as on <strong>neural network–based methods</strong> for <strong>channel state information</strong> and <strong>system optimization</strong>. I particularly enjoy combining <strong>physics-based models</strong> with <strong>data-driven approaches</strong> to design smarter and more efficient RF systems.
-</p>
+            <img src="photo.jpeg" alt="Javad Ebrahimizadeh">
 
-<p>
-My experience spans a wide range of tools and technologies, including <strong>electromagnetic solvers</strong> such as <strong>HFSS</strong> and <strong>CST</strong>, as well as <strong>circuit and system-level platforms</strong> like <strong>ADS</strong> and <strong>MATLAB</strong>. This allows me to move seamlessly from <strong>antenna and front-end design</strong> to <strong>full system modeling</strong> and <strong>performance evaluation</strong>.
-</p>
+            <h2>Javad Ebrahimizadeh</h2>
 
-<p>
-Currently, I work as an <strong>RF Designer</strong>, focusing on <strong>high-efficiency microwave sources</strong> based on <strong>magnetron</strong>. Using tools like <strong>COMSOL</strong> and <strong>HFSS</strong>, I design and simulate <strong>high-power electromagnetic systems</strong> operating in <strong>L-band</strong> and <strong>C-band frequencies</strong>.
-</p>
+            <p>
+                RF & Microwave Engineer<br>
+                PhD in Electrical and Computer Engineering
+            </p>
 
-<p>
-I’m passionate about advancing <strong>RF and microwave technologies</strong>, especially where they intersect with <strong>machine learning</strong> and <strong>sensing</strong>. I value <strong>curiosity</strong>, <strong>collaboration</strong>, and <strong>continuous learning</strong>—and I’m always excited to explore new ideas and challenges.
-</p>
+            <p>
+                Leuven, Belgium
+            </p>
+
+            <a href="https://www.linkedin.com/in/javad-ebrahimizadeh-81b710183/" target="_blank">
+                💼 LinkedIn
+            </a>
+
+            <a href="https://scholar.google.com/citations?user=nlWMysEAAAAJ&hl=en&oi=ao" target="_blank">
+                🎓 Google Scholar
+            </a>
+
+            <a href="#" target="_blank">
+                🟢 ORCID
+            </a>
+
+            <a href="https://github.com/javadeb" target="_blank">
+                🐙 GitHub
+            </a>
+
+        </div>
+
+        <div class="content">
+
+            <h1>About Me</h1>
+
+            <p>
+                Hi, I’m <strong>Javad Ebrahimizadeh</strong>,
+                an <strong>RF and Microwave Engineer</strong> at
+                <strong>MEAM</strong> in Belgium,
+                with a <strong>PhD in Electrical and Computer Engineering</strong>
+                from <strong>KU Leuven</strong>.
+                My research and engineering activities focus on
+                <strong>electromagnetics</strong>,
+                <strong>wireless communication systems</strong>,
+                <strong>millimeter-wave propagation</strong>,
+                and <strong>machine learning for RF systems</strong>.
+            </p>
+
+            <p>
+                During my PhD at KU Leuven,
+                I worked extensively on
+                <strong>wireless propagation modeling</strong>,
+                <strong>ray tracing</strong>,
+                <strong>massive MIMO systems</strong>,
+                and <strong>active phased-array antennas</strong>.
+                My work combines
+                <strong>physics-based electromagnetic modeling</strong>
+                with <strong>data-driven machine learning approaches</strong>
+                for next-generation wireless systems.
+            </p>
+
+            <p>
+                I have experience in
+                <strong>millimeter-wave channel characterization</strong>,
+                <strong>RCS-based propagation modeling</strong>,
+                <strong>antenna design</strong>,
+                <strong>microwave sensing</strong>,
+                and <strong>biomedical RF applications</strong>.
+                My research also includes
+                <strong>microwave imaging systems</strong>,
+                <strong>inverse electromagnetic problems</strong>,
+                and <strong>non-invasive sensing technologies</strong>.
+            </p>
+
+            <p>
+                I actively work with advanced electromagnetic
+                and RF simulation tools including
+                <strong>HFSS</strong>,
+                <strong>CST Studio Suite</strong>,
+                <strong>Altair FEKO</strong>,
+                <strong>ADS</strong>,
+                <strong>COMSOL Multiphysics</strong>,
+                and <strong>MATLAB/Python</strong>.
+                These tools allow me to work from
+                <strong>antenna and RF front-end design</strong>
+                to <strong>system-level analysis and optimization</strong>.
+            </p>
+
+            <p>
+                Currently, I work on
+                <strong>high-efficiency microwave sources</strong>
+                and <strong>high-power electromagnetic systems</strong>
+                operating in <strong>L-band</strong>
+                and <strong>C-band frequencies</strong>.
+                My current engineering activities involve
+                <strong>microwave heating systems</strong>,
+                <strong>magnetron-based RF systems</strong>,
+                and <strong>industrial microwave applications</strong>.
+            </p>
+
+            <p>
+                I am passionate about advancing
+                <strong>RF and microwave technologies</strong>,
+                particularly in areas where
+                <strong>electromagnetics</strong>,
+                <strong>machine learning</strong>,
+                and <strong>wireless sensing</strong>
+                intersect.
+                I strongly value
+                <strong>innovation</strong>,
+                <strong>collaboration</strong>,
+                and <strong>continuous learning</strong>.
+            </p>
+
+        </div>
+
     </div>
 
-</div>
+    <div class="footer">
+        © 2026 Javad Ebrahimizadeh | KU Leuven
+    </div>
 
 </body>
+
 </html>
