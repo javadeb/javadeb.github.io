@@ -99,6 +99,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             border-left: 6px solid #0056b3;
             transition: 0.35s;
+            position: relative;
         }
 
         li:hover {
@@ -124,9 +125,55 @@
             color: #555;
         }
 
+        /* Active Featured Blog */
+
         .highlight-post {
             background: linear-gradient(135deg, #ffffff, #f0f6ff);
             border-left: 8px solid #ff9800;
+            transform: scale(1.01);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.14);
+        }
+
+        .highlight-post::before {
+            content: "ACTIVE POST";
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background: #ff9800;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Future Shadow Posts */
+
+        .future-post {
+            opacity: 0.5;
+            filter: grayscale(25%);
+            border-left: 6px solid #9aa5b1;
+        }
+
+        .future-post a {
+            pointer-events: none;
+            cursor: default;
+            color: #6b7280;
+        }
+
+        .future-post::before {
+            content: "COMING SOON";
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background: #6b7280;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
         }
 
         .footer {
@@ -263,7 +310,7 @@
 
         </ul>
 
-        <h2>Featured Post</h2>
+        <h2>Featured Active Post</h2>
 
         <ul>
 
@@ -287,13 +334,13 @@
 
         </ul>
 
-        <h2>Recent Posts</h2>
+        <h2>Upcoming Technical Posts</h2>
 
         <ul>
 
-            <li>
+            <li class="future-post">
 
-                <a href="blogs/microwave-heating.html">
+                <a href="#">
                     Microwave Heating and Dielectric Materials
                 </a>
 
@@ -305,9 +352,9 @@
 
             </li>
 
-            <li>
+            <li class="future-post">
 
-                <a href="blogs/permittivity-extraction.html">
+                <a href="#">
                     Permittivity Extraction from S-Parameters
                 </a>
 
@@ -319,9 +366,9 @@
 
             </li>
 
-            <li>
+            <li class="future-post">
 
-                <a href="blogs/machine-learning-rf.html">
+                <a href="#">
                     Machine Learning for RF Systems
                 </a>
 
@@ -332,9 +379,9 @@
 
             </li>
 
-            <li>
+            <li class="future-post">
 
-                <a href="blogs/mmwave-channel-modeling.html">
+                <a href="#">
                     Millimeter-Wave Channel Modeling for 5G and 6G
                 </a>
 
@@ -345,9 +392,9 @@
 
             </li>
 
-            <li>
+            <li class="future-post">
 
-                <a href="blogs/phased-array.html">
+                <a href="#">
                     Hybrid Phased Arrays and Beamforming Techniques
                 </a>
 
