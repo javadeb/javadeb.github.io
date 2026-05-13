@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,23 +50,40 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #0b1f3a, #0b4ea2);
+
+            background:
+                linear-gradient(
+                    rgba(11,31,58,0.72),
+                    rgba(11,78,162,0.72)
+                ),
+                url("images/meam.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
             color: white;
-            padding: 90px 30px;
+            padding: 140px 30px;
             text-align: center;
+
+            position: relative;
         }
 
         .hero h1 {
-            font-size: 52px;
-            margin-bottom: 20px;
+            font-size: 58px;
+            margin-bottom: 22px;
             color: white;
+            font-weight: 800;
+            text-shadow: 0 4px 18px rgba(0,0,0,0.55);
         }
 
         .hero p {
-            max-width: 900px;
+            max-width: 950px;
             margin: auto;
-            font-size: 20px;
-            color: #e2e8f0;
+            font-size: 22px;
+            color: #f1f5f9;
+            line-height: 1.8;
+            text-shadow: 0 3px 12px rgba(0,0,0,0.45);
         }
 
         .content {
@@ -150,7 +166,7 @@
             }
 
             .hero h1 {
-                font-size: 38px;
+                font-size: 40px;
             }
 
             .hero p {
@@ -190,10 +206,10 @@
         </h1>
 
         <p>
-            Understanding the engineering principles behind industrial
-            high-power microwave magnetron systems, including
-            RF generation, thermal management, sensing technologies,
-            protection systems, and industrial applications.
+            Advanced microwave engineering for industrial drying,
+            sustainable thermal processing, RF sensing,
+            high-power microwave systems, and intelligent
+            industrial microwave technologies.
         </p>
 
     </div>
@@ -201,30 +217,6 @@
     <div class="content">
 
         <h2>Introduction</h2>
-
-       <!-- Figure 1 -->
-
-<div class="blog-image">
-
-    <img src="images/meam.jpg"
-         alt="MEAM industrial microwave drying technology"
-         style="
-            width:90%;
-            max-width:1100px;
-            border-radius:18px;
-            box-shadow:0 8px 24px rgba(0,0,0,0.18);
-         ">
-
-    <p>
-        Figure 1 — Industrial microwave drying technology developed by
-        <a href="https://meam-international.com/"
-           target="_blank"
-           style="color:#0b4ea2; text-decoration:none; font-weight:bold;">
-           MEAM International
-        </a>
-    </p>
-
-</div>
 
         <p>
             One of the leading companies in Belgium working on industrial microwave
@@ -304,7 +296,7 @@
                  alt="High Power Magnetron Source System">
 
             <p>
-                Figure 2 — High-power magnetron source system block diagram
+                Figure 1 — High-power magnetron source system block diagram
             </p>
 
         </div>
@@ -324,27 +316,25 @@
             generating microwave oscillations at specific frequencies such as 2.45 GHz.
         </p>
 
-        <!-- Figure 3 -->
+        <div class="blog-image">
 
-<div class="blog-image">
+            <img src="images/magnetrontube.png"
+                 alt="Industrial high-power magnetron tube and low-power microwave oven magnetron tube"
+                 style="width:55%; max-width:550px;">
 
-    <img src="images/magnetrontube.png"
-         alt="Industrial high-power magnetron tube and low-power microwave oven magnetron tube"
-         style="width:55%; max-width:550px;">
+            <p>
+                Figure 2 — Magnetron tubes: industrial high-power and kitchen microwave magnetrons
+            </p>
 
-    <p>
-        Figure 3 — Magnetron tubes: industrial high-power and kitchen microwave magnetrons
-    </p>
-
-</div>
+        </div>
 
         <p>
             The image above compares two common types of magnetron tubes. The larger
             high-power magnetron tube is designed for industrial applications such as
-            microwave heating, drying, plasma generation, and material processing. These
-            tubes are built to operate at much higher power levels and usually require
-            strong cooling systems, reliable high-voltage supplies, waveguide connections,
-            and protection circuits.
+            microwave heating, drying, plasma generation, and material processing.
+            These tubes are built to operate at much higher power levels and usually
+            require strong cooling systems, reliable high-voltage supplies, waveguide
+            connections, and protection circuits.
         </p>
 
         <p>
@@ -371,19 +361,17 @@
 
         </div>
 
-        <!-- Figure 4 -->
+        <div class="blog-image">
 
-<div class="blog-image">
+            <img src="images/magnetronsignal.png"
+                 alt="Measured magnetron power signals using RF detector diodes"
+                 style="width:55%; max-width:550px;">
 
-    <img src="images/magnetronsignal.png"
-         alt="Measured magnetron power signals using RF detector diodes"
-         style="width:55%; max-width:550px;">
+            <p>
+                Figure 3 — Measured microwave power signals from continuous-wave and pulsed magnetron systems
+            </p>
 
-    <p>
-        Figure 4 — Measured microwave power signals from continuous-wave and pulsed magnetron systems
-    </p>
-
-</div>
+        </div>
 
         <p>
             The figure above shows measured microwave power signals obtained from two
@@ -447,220 +435,6 @@
 
         </div>
 
-        <h2>Waveguide and RF Output System</h2>
-
-        <p>
-            The generated microwave power is transferred through waveguides toward
-            the load or applicator. Waveguides are preferred in high-power microwave
-            systems because they provide low loss and high power handling capability.
-        </p>
-
-        <p>
-            The RF chain may include directional couplers, isolators, circulators,
-            tuning elements, and dummy loads. These components help maintain stable
-            power delivery and protect the magnetron from reflected energy.
-        </p>
-
-        <div class="blog-image">
-
-            <img src="images/fihre2.png"
-                 alt="Waveguide and RF Protection System">
-
-            <p>
-                Figure 5 — Waveguide and RF protection system
-            </p>
-
-        </div>
-
-        <h2>Sensors Used in High-Power Magnetron Systems</h2>
-
-        <p>
-            Sensors are essential for monitoring the health and stability of the system.
-            Since magnetrons operate at high voltage and high RF power levels, small
-            failures can quickly damage the system if not detected early.
-        </p>
-
-        <h3>Temperature Sensors</h3>
-
-        <p>
-            Thermocouples and RTDs are commonly used to monitor the temperature of
-            the magnetron body, cooling water, waveguides, and power electronics.
-            Thermal monitoring helps prevent overheating and extends the lifetime
-            of the magnetron tube.
-        </p>
-
-        <h3>RF Power Sensors</h3>
-
-        <p>
-            Directional couplers are used to measure forward and reflected microwave
-            power. High reflected power may indicate load mismatch, plasma instability,
-            or waveguide faults.
-        </p>
-
-        <h3>Current and Voltage Sensors</h3>
-
-        <p>
-            Hall-effect sensors and current transformers are used to monitor cathode
-            current and filament current. High-voltage dividers are used to safely
-            measure the magnetron operating voltage.
-        </p>
-
-        <h3>Cooling Sensors</h3>
-
-        <p>
-            Water flow sensors, pressure sensors, and temperature sensors are used
-            in water-cooled systems to detect cooling failure or blockage.
-        </p>
-
-        <h3>Safety Sensors</h3>
-
-        <p>
-            Microwave leakage detectors, door interlocks, emergency stop systems,
-            and arc detectors are important safety components in industrial microwave
-            systems.
-        </p>
-
-        <div class="blog-image">
-
-            <img src="images/figure3.png"
-                 alt="Sensor Placement in a High-Power Microwave System">
-
-            <p>
-                Figure 6 — Sensor placement in a high-power microwave system
-            </p>
-
-        </div>
-
-        <h2>Cooling and Thermal Management</h2>
-
-        <p>
-            High-power magnetrons generate significant heat during operation.
-            Without proper cooling, the cathode and resonant cavities may experience
-            thermal deformation and reduced performance.
-        </p>
-
-        <p>
-            Depending on the power level, cooling may be implemented using forced-air
-            systems or closed-loop water cooling systems. Industrial systems often
-            include heat exchangers, pumps, temperature controllers, and thermal alarms.
-        </p>
-
-        <div class="highlight-box">
-
-            <strong>Thermal Challenges:</strong>
-
-            <ul>
-                <li>Hot spot formation</li>
-                <li>Thermal expansion</li>
-                <li>Frequency drift</li>
-                <li>Reduced cathode lifetime</li>
-                <li>Cooling channel blockage</li>
-            </ul>
-
-        </div>
-
-        <h2>Protection and Safety Systems</h2>
-
-        <p>
-            High-power microwave systems require fast protection mechanisms because
-            arcing or reflected power can damage the magnetron within milliseconds.
-        </p>
-
-        <p>
-            Modern systems use microcontrollers, PLCs, or FPGA-based monitoring systems
-            to continuously supervise the operating conditions.
-        </p>
-
-        <div class="highlight-box">
-
-            <strong>Common Protection Functions:</strong>
-
-            <ul>
-                <li>Over-temperature shutdown</li>
-                <li>Over-current protection</li>
-                <li>Reflected power protection</li>
-                <li>Arc detection</li>
-                <li>Cooling failure shutdown</li>
-                <li>Door interlock system</li>
-                <li>Emergency stop control</li>
-            </ul>
-
-        </div>
-
-        <h2>Industrial Applications</h2>
-
-        <p>
-            High-power magnetron systems are used in many industrial and scientific fields.
-            Their ability to generate microwave energy efficiently makes them highly valuable
-            for heating, plasma generation, and electromagnetic processing applications.
-        </p>
-
-        <ul>
-            <li>Industrial microwave heating</li>
-            <li>Food drying and sterilization</li>
-            <li>Microwave chemistry</li>
-            <li>Plasma generation systems</li>
-            <li>Radar transmitters</li>
-            <li>Ceramic sintering</li>
-            <li>Biomedical thermal systems</li>
-        </ul>
-
-        <h2>Future Trends</h2>
-
-        <p>
-            Future high-power microwave systems are expected to become smarter and
-            more adaptive through the integration of digital control systems,
-            artificial intelligence, and advanced sensing technologies.
-        </p>
-
-        <p>
-            Real-time RF diagnostics, machine learning-based fault prediction,
-            adaptive impedance matching, and digital twin technologies may significantly
-            improve efficiency and reliability in industrial microwave systems.
-        </p>
-
-        <h2>Conclusion</h2>
-
-        <p>
-            High-power magnetron systems represent a combination of microwave engineering,
-            high-voltage electronics, thermal science, sensing technology, and industrial
-            automation. Designing reliable systems requires careful attention to RF power
-            delivery, cooling systems, sensor integration, and protection mechanisms.
-        </p>
-
-        <p>
-            In modern industrial environments, advanced monitoring and intelligent control
-            systems are becoming increasingly important for improving safety, efficiency,
-            and long-term reliability.
-        </p>
-
-        <div style="
-            margin-top:60px;
-            padding:20px;
-            background:#eef5ff;
-            border-left:5px solid #0b4ea2;
-            border-radius:10px;
-            font-size:15px;
-            color:#555;
-            line-height:1.7;
-        ">
-
-            <strong>Note:</strong>
-            Figures presented in this article were generated using
-            ChatGPT AI-based visualization and technical illustration tools
-            for educational and research communication purposes.
-            Some industrial microwave technology references and inspiration
-            are related to the work of
-            <a href="https://meam-international.com/"
-               target="_blank"
-               style="color:#0b4ea2; font-weight:bold; text-decoration:none;">
-               MEAM International
-            </a>,
-            a Belgian company active in industrial microwave drying and
-            sustainable thermal processing technologies.
-
-        </div>
-
     </div>
 
     <div class="footer">
@@ -670,4 +444,3 @@
 </body>
 
 </html>
-```
