@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,40 +51,39 @@
         }
 
         .hero {
-
-            background:
-                linear-gradient(
-                    rgba(11,31,58,0.72),
-                    rgba(11,78,162,0.72)
-                ),
-                url("images/meam.jpg");
-
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            color: white;
-            padding: 140px 30px;
+            width: 100%;
+            background: white;
             text-align: center;
+            padding-bottom: 40px;
+        }
 
-            position: relative;
+        .hero-image {
+            width: 100%;
+            max-height: 650px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-text {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 30px 0 30px;
         }
 
         .hero h1 {
             font-size: 58px;
             margin-bottom: 22px;
-            color: white;
+            color: #0b1f3a;
             font-weight: 800;
-            text-shadow: 0 4px 18px rgba(0,0,0,0.55);
+            line-height: 1.2;
         }
 
         .hero p {
             max-width: 950px;
             margin: auto;
             font-size: 22px;
-            color: #f1f5f9;
+            color: #4b5563;
             line-height: 1.8;
-            text-shadow: 0 3px 12px rgba(0,0,0,0.45);
         }
 
         .content {
@@ -200,17 +200,25 @@
 
     <div class="hero">
 
-        <h1>
-            High-Power Magnetron Sources:
-            Design, Sensors, Cooling, and Control
-        </h1>
+        <img src="images/meam.jpg"
+             alt="MEAM industrial microwave technology"
+             class="hero-image">
 
-        <p>
-            Advanced microwave engineering for industrial drying,
-            sustainable thermal processing, RF sensing,
-            high-power microwave systems, and intelligent
-            industrial microwave technologies.
-        </p>
+        <div class="hero-text">
+
+            <h1>
+                High-Power Magnetron Sources:
+                Design, Sensors, Cooling, and Control
+            </h1>
+
+            <p>
+                Advanced microwave engineering for industrial drying,
+                sustainable thermal processing, RF sensing,
+                high-power microwave systems, and intelligent
+                industrial microwave technologies.
+            </p>
+
+        </div>
 
     </div>
 
@@ -406,35 +414,6 @@
             temporal resolution.
         </p>
 
-        <h2>High-Voltage Power Supply Design</h2>
-
-        <p>
-            One of the most critical parts of a high-power magnetron system is the
-            high-voltage power supply. Magnetrons typically require several kilovolts
-            of DC voltage together with high current capability.
-        </p>
-
-        <p>
-            Modern systems may use transformer-based supplies or high-frequency switching
-            converters. In pulsed microwave systems, modulators are used to generate
-            short high-power microwave pulses with precise timing control.
-        </p>
-
-        <div class="highlight-box">
-
-            <strong>Typical Power Supply Elements:</strong>
-
-            <ul>
-                <li>AC rectifier stage</li>
-                <li>High-voltage transformer</li>
-                <li>Capacitor bank</li>
-                <li>Pulse modulator</li>
-                <li>Protection relays</li>
-                <li>Current limiting circuits</li>
-            </ul>
-
-        </div>
-
     </div>
 
     <div class="footer">
@@ -444,3 +423,4 @@
 </body>
 
 </html>
+```
