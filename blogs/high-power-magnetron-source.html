@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,10 +6,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>High-Power Magnetron Sources - Javad Ebrahimizadeh</title>
+
     <link rel="stylesheet" href="../style.css">
 
     <style>
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -135,6 +139,7 @@
         }
 
         @media (max-width: 900px) {
+
             .navbar {
                 flex-direction: column;
                 text-align: center;
@@ -151,7 +156,9 @@
             .hero p {
                 font-size: 18px;
             }
+
         }
+
     </style>
 
 </head>
@@ -159,7 +166,10 @@
 <body>
 
     <div class="navbar">
-        <div class="name">Javad Ebrahimizadeh</div>
+
+        <div class="name">
+            Javad Ebrahimizadeh
+        </div>
 
         <div>
             <a href="../index.html">Home</a>
@@ -169,9 +179,11 @@
             <a href="../blog.html">Blog</a>
             <a href="../cv.html">CV</a>
         </div>
+
     </div>
 
     <div class="hero">
+
         <h1>
             High-Power Magnetron Sources:
             Design, Sensors, Cooling, and Control
@@ -183,6 +195,7 @@
             RF generation, thermal management, sensing technologies,
             protection systems, and industrial applications.
         </p>
+
     </div>
 
     <div class="content">
@@ -207,8 +220,14 @@
         </p>
 
         <div class="blog-image">
-            <img src="images/magnetronsource.png" alt="High Power Magnetron Source System">
-            <p>Figure 1 — High-power magnetron source system block diagram</p>
+
+            <img src="images/magnetronsource.png"
+                 alt="High Power Magnetron Source System">
+
+            <p>
+                Figure 1 — High-power magnetron source system block diagram
+            </p>
+
         </div>
 
         <h2>What is a Magnetron?</h2>
@@ -227,11 +246,14 @@
         </p>
 
         <div class="blog-image">
-            <img src="images/magnetrontube.png" alt="Industrial high-power magnetron tube and low-power microwave oven magnetron tube">
+
+            <img src="images/magnetrontube.png"
+                 alt="Industrial high-power magnetron tube and low-power microwave oven magnetron tube">
+
             <p>
-                Figure 2 — Magnetron tubes: an industrial high-power magnetron tube and a
-                low-power magnetron tube used in a kitchen microwave oven
+                Figure 2 — Magnetron tubes: industrial high-power and kitchen microwave magnetrons
             </p>
+
         </div>
 
         <p>
@@ -244,16 +266,16 @@
         </p>
 
         <p>
-            The smaller magnetron tube is the type commonly used in kitchen microwave
-            ovens. It typically operates around 2.45 GHz and produces microwave power
-            suitable for heating food. Compared with industrial magnetrons, oven
+            The smaller magnetron tube is commonly used in kitchen microwave ovens.
+            It typically operates around 2.45 GHz and generates microwave power suitable
+            for heating food. Compared with industrial magnetrons, microwave oven
             magnetrons are simpler, lower-cost, and lower-power devices, but they still
-            use the same basic physical principle: the interaction of electrons with
-            electric and magnetic fields inside resonant cavities to generate microwave
-            radiation.
+            operate using the same physical principle involving the interaction between
+            electrons, electric fields, magnetic fields, and resonant cavities.
         </p>
 
         <div class="highlight-box">
+
             <strong>Main Components of a Magnetron:</strong>
 
             <ul>
@@ -264,46 +286,52 @@
                 <li>Vacuum enclosure</li>
                 <li>Cooling structure</li>
             </ul>
+
         </div>
+
         <div class="blog-image">
 
-    <img src="images/magnetronsignal.png"
-         alt="Measured magnetron power signals using detector diodes">
+            <img src="images/magnetronsignal.png"
+                 alt="Measured magnetron power signals using RF detector diodes">
 
-    <p>
-        Figure 3 — Measured microwave power signals from continuous-wave and pulsed magnetron systems
-    </p>
+            <p>
+                Figure 3 — Measured microwave power signals from continuous-wave and pulsed magnetron systems
+            </p>
 
-</div>
+        </div>
 
-<p>
-    The figure above shows measured microwave power signals from two different
-    magnetron systems operating at 2.45 GHz. The first signal corresponds to a
-    continuous-wave industrial magnetron source with approximately 2 kW output
-    power, where the microwave power is measured using an RF power detector diode.
-</p>
+        <p>
+            The figure above shows measured microwave power signals obtained from two
+            different magnetron systems operating at 2.45 GHz. The upper signal corresponds
+            to a continuous-wave industrial magnetron source with approximately 2 kW output
+            power, where the microwave power is monitored using RF detector diodes and
+            real-time power measurement circuitry.
+        </p>
 
-<p>
-    The second signal shows the output power behavior of a pulsed high-power
-    magnetron system. In pulsed microwave systems, the RF energy is generated
-    in short-duration high-power pulses instead of continuous operation. These
-    systems are commonly used in radar transmitters, plasma systems, and pulsed
-    microwave experiments where very high peak power levels are required.
-</p>
+        <p>
+            The lower signal illustrates the output behavior of a pulsed high-power
+            magnetron system. In pulsed microwave operation, microwave energy is generated
+            in short-duration pulses with high peak power levels instead of continuous RF
+            transmission. Pulsed magnetron systems are widely used in radar transmitters,
+            plasma systems, pulsed heating systems, and high-power microwave experiments.
+        </p>
 
-<p>
-    Real-time microwave power monitoring is extremely important in high-power
-    magnetron systems because reflected power, arcing, or load mismatch can
-    rapidly damage the microwave source. Therefore, RMS detector circuits and
-    peak detector diodes are widely used for real-time RF power measurements.
-</p>
+        <p>
+            Real-time microwave power monitoring is extremely important in high-power
+            magnetron systems because reflected power, arcing, impedance mismatch,
+            thermal instability, or cooling failure can rapidly damage the microwave
+            source and associated RF components. Therefore, RF detector circuits are
+            commonly integrated into industrial microwave systems for continuous
+            monitoring and protection.
+        </p>
 
-<p>
-    RMS power detectors are useful for measuring the average microwave power
-    delivered by continuous-wave magnetron systems, while peak detector diodes
-    are commonly used in pulsed microwave systems to capture the instantaneous
-    peak power of microwave pulses with high temporal resolution.
-</p>
+        <p>
+            RMS detector circuits are useful for estimating the effective microwave power
+            delivered by continuous-wave or modulated magnetron systems, while peak
+            detector diodes are commonly used in pulsed microwave systems to capture
+            the peak envelope of microwave pulses with fast response time and high
+            temporal resolution.
+        </p>
 
         <h2>High-Voltage Power Supply Design</h2>
 
@@ -320,6 +348,7 @@
         </p>
 
         <div class="highlight-box">
+
             <strong>Typical Power Supply Elements:</strong>
 
             <ul>
@@ -330,6 +359,7 @@
                 <li>Protection relays</li>
                 <li>Current limiting circuits</li>
             </ul>
+
         </div>
 
         <h2>Waveguide and RF Output System</h2>
@@ -347,8 +377,14 @@
         </p>
 
         <div class="blog-image">
-            <img src="images/fihre2.png" alt="Waveguide and RF Protection System">
-            <p>Figure 3 — Waveguide and RF protection system</p>
+
+            <img src="images/fihre2.png"
+                 alt="Waveguide and RF Protection System">
+
+            <p>
+                Figure 4 — Waveguide and RF protection system
+            </p>
+
         </div>
 
         <h2>Sensors Used in High-Power Magnetron Systems</h2>
@@ -400,8 +436,14 @@
         </p>
 
         <div class="blog-image">
-            <img src="images/figure3.png" alt="Sensor Placement in a High-Power Microwave System">
-            <p>Figure 4 — Sensor placement in a high-power microwave system</p>
+
+            <img src="images/figure3.png"
+                 alt="Sensor Placement in a High-Power Microwave System">
+
+            <p>
+                Figure 5 — Sensor placement in a high-power microwave system
+            </p>
+
         </div>
 
         <h2>Cooling and Thermal Management</h2>
@@ -419,6 +461,7 @@
         </p>
 
         <div class="highlight-box">
+
             <strong>Thermal Challenges:</strong>
 
             <ul>
@@ -428,6 +471,7 @@
                 <li>Reduced cathode lifetime</li>
                 <li>Cooling channel blockage</li>
             </ul>
+
         </div>
 
         <h2>Protection and Safety Systems</h2>
@@ -443,6 +487,7 @@
         </p>
 
         <div class="highlight-box">
+
             <strong>Common Protection Functions:</strong>
 
             <ul>
@@ -454,6 +499,7 @@
                 <li>Door interlock system</li>
                 <li>Emergency stop control</li>
             </ul>
+
         </div>
 
         <h2>Industrial Applications</h2>
@@ -513,10 +559,12 @@
             color:#555;
             line-height:1.7;
         ">
+
             <strong>Note:</strong>
             Figures presented in this article were generated using
             ChatGPT AI-based visualization and technical illustration tools
             for educational and research communication purposes.
+
         </div>
 
     </div>
@@ -528,3 +576,4 @@
 </body>
 
 </html>
+```
