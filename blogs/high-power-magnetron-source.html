@@ -369,6 +369,8 @@
             </ul>
         </div>
 
+        <h2>How to measure the power?</h2>
+
         <div class="blog-image">
             <img src="images/magnetronsignal.png"
                  alt="Measured magnetron power signals using RF detector diodes"
@@ -378,37 +380,50 @@
         </div>
 
         <p>
-            The figure above shows measured microwave power signals obtained from two
-            different magnetron systems operating at 2.45 GHz. The upper signal corresponds
-            to a continuous-wave industrial magnetron source with approximately 2 kW output
-            power, where the microwave power is monitored using RF detector diodes and
-            real-time power measurement circuitry.
-        </p>
+    Microwave power can be monitored using either dedicated RF power detector
+    circuits or a spectrum analyzer configured for time-domain measurements.
+    A common approach in industrial microwave systems is to sample a small
+    portion of the transmitted power through a directional coupler and feed it
+    to an RF detector diode. The detector converts the microwave signal into a
+    proportional DC voltage that can be measured by an oscilloscope, data
+    acquisition system, PLC, or protection circuitry for continuous real-time
+    monitoring of the magnetron output power.
+</p>
 
-        <p>
-            The lower signal illustrates the output behavior of a pulsed high-power
-            magnetron system. In pulsed microwave operation, microwave energy is generated
-            in short-duration pulses with high peak power levels instead of continuous RF
-            transmission. Pulsed magnetron systems are widely used in radar transmitters,
-            plasma systems, pulsed heating systems, and high-power microwave experiments.
-        </p>
+<p>
+    For laboratory characterization of a free-running magnetron oscillator,
+    a spectrum analyzer can also be used in <strong>Zero Span</strong> mode.
+    In this configuration, the analyzer is tuned to the magnetron operating
+    frequency (typically 2.45 GHz) and displays the signal amplitude as a
+    function of time rather than frequency. Zero-span measurements allow
+    observation of startup behavior, power fluctuations, pulse envelopes,
+    modulation effects, and transient events that are not easily visible in a
+    conventional frequency sweep.
+</p>
 
-        <p>
-            Real-time microwave power monitoring is extremely important in high-power
-            magnetron systems because reflected power, arcing, impedance mismatch,
-            thermal instability, or cooling failure can rapidly damage the microwave
-            source and associated RF components. Therefore, RF detector circuits are
-            commonly integrated into industrial microwave systems for continuous
-            monitoring and protection.
-        </p>
+<p>
+    When using a spectrum analyzer for magnetron power measurements, the
+    <strong>Peak Detector</strong> should generally be selected instead of the
+    RMS or average detector. Free-running magnetrons exhibit frequency drift,
+    phase noise, and amplitude variations due to their oscillator nature.
+    A peak detector captures the maximum instantaneous signal level and
+    provides a more representative indication of the actual microwave power,
+    especially for pulsed operation or rapidly varying signals. RMS detectors,
+    on the other hand, average the signal energy over time and may underestimate
+    short-duration peaks and transient power excursions.
+</p>
 
-        <p>
-            RMS detector circuits are useful for estimating the effective microwave power
-            delivered by continuous-wave or modulated magnetron systems, while peak
-            detector diodes are commonly used in pulsed microwave systems to capture
-            the peak envelope of microwave pulses with fast response time and high
-            temporal resolution.
-        </p>
+<p>
+    In high-power microwave systems, continuous monitoring of both forward and
+    reflected power is essential for protecting the magnetron and associated RF
+    components. Excessive reflected power caused by load mismatch, arcing,
+    material property changes, cooling failure, or cavity detuning can lead to
+    reduced efficiency, overheating, and premature failure of the microwave
+    source. Therefore, industrial microwave generators typically integrate RF
+    detector circuits and protection interlocks that continuously supervise the
+    operating conditions and automatically shut down the system if abnormal
+    power levels are detected.
+</p>
 
         <h2>High-Voltage Power Supply Design</h2>
 
