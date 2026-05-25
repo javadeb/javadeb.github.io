@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
 
     <meta charset="UTF-8">
@@ -23,298 +20,76 @@
 
     <link rel="canonical" href="https://javadeb.github.io/">
 
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Javad Ebrahimizadeh | RF and Microwave Engineer | KU Leuven PhD">
+
+    <meta property="og:description"
+        content="Official website of Javad Ebrahimizadeh, RF and Microwave Engineer and PhD researcher specializing in electromagnetics, microwave imaging, wireless communications, phased arrays, and machine learning for RF systems.">
+
+    <meta property="og:url"
+        content="https://javadeb.github.io/">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:image"
+        content="https://javadeb.github.io/photo.jpeg">
+
+    <meta property="og:site_name"
+        content="Javad Ebrahimizadeh">
+
+    <!-- Twitter -->
+    <meta name="twitter:card"
+        content="summary_large_image">
+
+    <meta name="twitter:title"
+        content="Javad Ebrahimizadeh | RF and Microwave Engineer">
+
+    <meta name="twitter:description"
+        content="Official website of Javad Ebrahimizadeh, RF and Microwave Engineer and PhD researcher at KU Leuven.">
+
+    <meta name="twitter:image"
+        content="https://javadeb.github.io/photo.jpeg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Javad Ebrahimizadeh",
+      "url": "https://javadeb.github.io/",
+      "image": "https://javadeb.github.io/photo.jpeg",
+      "jobTitle": "RF and Microwave Engineer",
+      "description": "RF and Microwave Engineer and PhD researcher specializing in electromagnetics, wireless communications, microwave imaging, phased arrays, machine learning for RF systems, and biomedical microwave sensing.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "MEAM"
+      },
+      "alumniOf": {
+        "@type": "Organization",
+        "name": "KU Leuven"
+      },
+      "sameAs": [
+        "https://github.com/javadeb",
+        "https://scholar.google.com/citations?user=nlWMysEAAAAJ&hl=en&oi=ao",
+        "https://www.linkedin.com/in/javad-ebrahimizadeh-81b710183/"
+      ],
+      "knowsAbout": [
+        "RF Engineering",
+        "Microwave Engineering",
+        "Electromagnetics",
+        "Wireless Communications",
+        "Microwave Imaging",
+        "Phased Arrays",
+        "Massive MIMO",
+        "Machine Learning for RF Systems",
+        "Biomedical RF Sensing",
+        "Antenna Design"
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 
     <style>
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f7fb;
-            color: #222;
-        }
-
-        .navbar {
-            background-color: #0b1f3a;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 40px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar .name {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin-left: 22px;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        .navbar a:hover {
-            color: #7ec8ff;
-        }
-
-        .main {
-            display: flex;
-            max-width: 1400px;
-            margin: auto;
-            padding: 50px 30px;
-            gap: 40px;
-        }
-
-        .sidebar {
-            width: 320px;
-            background: white;
-            padding: 30px;
-            border-radius: 18px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-            height: fit-content;
-            text-align: center;
-        }
-
-        .sidebar img {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #d9e6f7;
-            margin-bottom: 20px;
-        }
-
-        .sidebar h2 {
-            color: #0b1f3a;
-            margin-bottom: 10px;
-            font-size: 28px;
-        }
-
-        .sidebar p {
-            line-height: 1.8;
-            color: #444;
-            font-size: 16px;
-        }
-
-        .sidebar a {
-            display: block;
-            text-decoration: none;
-            background: transparent;
-            color: gray;
-            padding: 10px;
-            margin-top: 10px;
-            transition: 0.3s;
-            font-weight: 600;
-        }
-
-        .sidebar a:hover {
-            color: #111;
-        }
-
-        .content {
-            flex: 1;
-            background: white;
-            padding: 40px;
-            border-radius: 18px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-        }
-
-        .content h1 {
-            font-size: 42px;
-            color: #0b1f3a;
-            margin-bottom: 25px;
-            border-bottom: 3px solid #0b4ea2;
-            padding-bottom: 12px;
-        }
-
-        .content p {
-            font-size: 17px;
-            line-height: 2;
-            color: #333;
-            margin-bottom: 22px;
-            text-align: justify;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 35px;
-            background: #0b1f3a;
-            color: white;
-            margin-top: 60px;
-        }
-
-        @media (max-width: 1000px) {
-
-            .main {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: auto;
-            }
-
-        }
-
-        @media (max-width: 768px) {
-
-            .navbar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .navbar div:last-child {
-                margin-top: 12px;
-            }
-
-            .navbar a {
-                margin-left: 0;
-                margin-right: 15px;
-            }
-
-            .content h1 {
-                font-size: 34px;
-            }
-
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-    <div class="navbar">
-
-        <div class="name">
-            Javad Ebrahimizadeh
-        </div>
-
-        <div>
-            <a href="index.html">Home</a>
-            <a href="articles.html">Articles</a>
-            <a href="research.html">Research</a>
-            <a href="experiences.html">Experiences</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog Posts</a>
-            <a href="cv.html">CV</a>
-        </div>
-
-    </div>
-
-    <div class="main">
-
-        <div class="sidebar">
-
-            <img src="photo.jpeg" alt="Javad Ebrahimizadeh">
-
-            <h2>Javad Ebrahimizadeh</h2>
-
-            <p>
-                RF & Microwave Engineer<br>
-                PhD in Electrical and Computer Engineering
-            </p>
-
-            <p>
-                Leuven, Belgium
-            </p>
-
-            <a href="https://www.linkedin.com/in/javad-ebrahimizadeh-81b710183/" target="_blank">
-                💼 LinkedIn
-            </a>
-
-            <a href="https://scholar.google.com/citations?user=nlWMysEAAAAJ&hl=en&oi=ao" target="_blank">
-                🎓 Google Scholar
-            </a>
-
-            <a href="https://github.com/javadeb" target="_blank">
-                🐙 GitHub
-            </a>
-
-        </div>
-
-        <div class="content">
-
-            <h1>Javad Ebrahimizadeh - RF and Microwave Engineer</h1>
-
-            <p>
-                Hi, I’m Javad Ebrahimizadeh, an RF and Microwave Engineer at MEAM in Belgium,
-                with a PhD in Electrical and Computer Engineering from KU Leuven.
-                My work focuses on electromagnetics, wireless communication systems,
-                millimeter-wave propagation, RF engineering, and machine learning for RF systems.
-            </p>
-
-            <p>
-                During my PhD at KU Leuven, I worked extensively on wireless propagation modeling,
-                ray tracing, massive MIMO systems, active phased-array antennas,
-                and electromagnetic simulation techniques.
-                My research combines physics-based electromagnetic modeling
-                with data-driven machine learning approaches for next-generation wireless systems.
-            </p>
-
-            <p>
-                I also have experience in microwave sensing, biomedical RF applications,
-                microwave imaging systems, inverse electromagnetic problems,
-                antenna design, and non-invasive sensing technologies.
-                My work includes developing microwave systems for biomedical imaging,
-                sensing, and industrial RF applications.
-            </p>
-
-            <p>
-                Currently, I work on high-efficiency microwave sources,
-                high-power electromagnetic systems, microwave heating technologies,
-                and industrial microwave applications operating mainly in L-band
-                and C-band frequencies.
-            </p>
-
-            <h1>Background</h1>
-
-            <p>
-                My academic and engineering background is centered around RF,
-                microwave engineering, electromagnetics, wireless communications,
-                and applied machine learning.
-                Over the years, I have worked on both theoretical and practical aspects
-                of electromagnetic systems, ranging from antenna and RF front-end design
-                to system-level wireless propagation analysis and optimization.
-            </p>
-
-            <p>
-                I have experience working in research-oriented environments as well as
-                industrial engineering projects involving RF hardware,
-                microwave systems, electromagnetic simulations,
-                and data-driven modeling approaches.
-            </p>
-
-            <h1>Skills</h1>
-
-            <p>
-                RF and Microwave Engineering • Electromagnetics • Antenna Design •
-                Wireless Communication Systems • Massive MIMO • Millimeter-Wave Systems •
-                Microwave Imaging • RF Sensing • Biomedical RF Applications •
-                Ray Tracing • Propagation Modeling • Machine Learning for RF Systems •
-                Inverse Electromagnetic Problems • Microwave Heating Systems •
-                High-Power RF Systems
-            </p>
-
-            <p>
-                HFSS • CST Studio Suite • Altair FEKO • ADS • COMSOL Multiphysics •
-                MATLAB • Python • Electromagnetic Simulation • Data Analysis •
-                Scientific Computing • Optimization Techniques
-            </p>
-
-        </div>
-
-    </div>
-
-    <div class="footer">
-        © 2026 Javad Ebrahimizadeh | KU Leuven
-    </div>
-
-</body>
-
-</html>
